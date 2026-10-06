@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="現在時刻と次の列車を直感的に確認できる発車案内アプリ">
+    <title>つぎの電車</title>
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Google+Sans+Code:wght@400;500&display=swap">
+    <!-- Only the characters used in the service badges are needed from the dot font. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&text=%E5%90%84%E9%A7%85%E5%81%9C%E8%BB%8A%E5%BF%AB%E9%80%9F&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js" defer></script>
+    <script src="sketch.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <div id="clock-canvas" aria-hidden="true"></div>
+      <time id="current-time" class="sr-only"></time>
+      <ol id="train-list" class="train-list" aria-label="田町駅を発車する列車"></ol>
+      <p id="empty-state" class="empty-state" hidden></p>
+      <p id="live-region" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+    </main>
+  </body>
+</html>

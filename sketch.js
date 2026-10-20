@@ -2,19 +2,19 @@
 const DATA_URL = "data/tamachi.json";
 const LINE_STYLES = {
   // Yamanote runs locals only, so its service badge is left blank.
-  "山手線": { color: "#80c241", localColor: "#5a9e2a", showService: false },
-  "京浜東北線・根岸線": { color: "#00b2e5", localColor: "#0092d0", showService: true }
+  "山手線": { localColor: "#5a9e2a", showService: false },
+  "京浜東北線・根岸線": { localColor: "#0092d0", showService: true }
 };
 // Like the on-board LED displays (E233 Keihin-Tohoku: local = sky blue, rapid = pink),
 // locals use the line color. Colors are slightly darkened so white text stays readable.
 const RAPID_COLOR = "#e4007f";
-const TRAINS_PER_DIRECTION = 2;
+const TRAINS_PER_DIRECTION = 4;
 const CLOCK_FONT = '500 88px "Google Sans Code"';
 // Timetable hours run 04:00-24:59; earlier times belong to the previous service day.
 const SERVICE_DAY_START_HOUR = 4;
 const JST_OFFSET_MS = 9 * 60 * 60_000;
 
-const listElement = document.getElementById("train-list");
+const trainList = document.getElementById("train-list");
 const emptyElement = document.getElementById("empty-state");
 const timeElement = document.getElementById("current-time");
 const liveElement = document.getElementById("live-region");
@@ -23,6 +23,25 @@ let loadError = false;
 let lastSecond = -1;
 let lastListState = null;
 let lastAnnouncement = "";
+let selectedPlatform = "all";
+
+document.querySelectorAll("[data-platform]").forEach((button) => {
+  button.addEventListener("click", () => {
+    selectedPlatform = button.dataset.platform;
+    document.querySelectorAll("[data-platform]").forEach((option) => {
+      option.setAttribute("aria-pressed", String(option.dataset.platform === selectedPlatform));
+    });
+    lastListState = null;
+    const now = new Date();
+    updateBoard(now, new Date(now.getTime() + JST_OFFSET_MS));
+  });
+});
+
+function getPlatformNumber(timetable) {
+  return timetable.line === "山手線"
+    ? ({ "内回り": "2", "外回り": "3" }[timetable.bound] ?? "—")
+    : ({ "北行": "1", "南行": "4" }[timetable.bound] ?? "—");
+}
 
 function setup() {
   const canvas = createCanvas(480, 110);
@@ -59,7 +78,7 @@ function draw() {
 function drawClock(jst) {
   clear();
   noStroke();
-  fill("#111");
+  fill("#1a1a1a");
   textAlign(CENTER, CENTER);
   // p5's textStyle() only offers NORMAL/BOLD, so set the medium weight on the canvas context directly.
   drawingContext.font = CLOCK_FONT;
@@ -107,11 +126,13 @@ function updateBoard(now, jst) {
     return;
   }
 
-  const upcoming = getUpcomingTrains(now, jst);
+  const upcoming = getUpcomingTrains(now, jst).filter((train) =>
+    selectedPlatform === "all" || getPlatformNumber(train.timetable) === selectedPlatform);
   const state = upcoming.map((train) => `${train.timetable.url}:${train.time}:${getRemainingMinutes(train, now)}`).join("|");
   if (state !== lastListState) {
-    listElement.replaceChildren(...upcoming.map((train) => createTrainRow(train, now)));
-    emptyElement.textContent = "本日の列車の運転は終了しました。";
+    trainList.replaceChildren(...upcoming.map((train, order) => createTrainRow(train, now, order)));
+    emptyElement.textContent = selectedPlatform === "all"
+      ? "本日の列車の運転は終了しました。" : `${selectedPlatform}番線の本日の列車の運転は終了しました。`;
     emptyElement.hidden = upcoming.length > 0;
     lastListState = state;
   }
@@ -119,12 +140,12 @@ function updateBoard(now, jst) {
   const next = upcoming[0];
   announce(next
     ? `現在時刻 ${currentTime}。次は${getDestinationLabel(next)}、あと${getRemainingMinutes(next, now)}分です。`
-    : `現在時刻 ${currentTime}。本日の列車の運転は終了しました。`);
+    : `現在時刻 ${currentTime}。${emptyElement.textContent}`);
 }
 
 function showMessage(message) {
   if (lastListState === message) return;
-  listElement.replaceChildren();
+  trainList.replaceChildren();
   emptyElement.textContent = message;
   emptyElement.hidden = false;
   lastListState = message;
@@ -145,19 +166,26 @@ function getDestinationLabel(train) {
   return train.destination === "環状運転" ? train.timetable.direction : `${train.destination}行き`;
 }
 
-function createTrainRow(train, now) {
-  const style = LINE_STYLES[train.timetable.line] ?? { color: "#999", localColor: "#666", showService: true };
-  const row = document.createElement("li");
-  row.className = "train";
-  row.style.setProperty("--route-color", style.color);
+function createTrainRow(train, now, order) {
+  const style = LINE_STYLES[train.timetable.line] ?? { localColor: "#666", showService: true };
   const remaining = getRemainingMinutes(train, now);
+  const row = document.createElement("li");
+  // Trains are sorted, so every "まもなく" row sits at the top and shares the emphasized size.
+  row.className = order === 0 || remaining === 1 ? "train is-next" : "train";
+  // The darker shades also keep the badge outline above the 3:1 non-text contrast ratio.
+  row.style.setProperty("--route-color", style.localColor);
 
+  const orderLabel = document.createElement("span");
+  orderLabel.className = "sr-only";
+  orderLabel.textContent = order === 0 ? "次の電車" : `${order + 1}本目`;
+
+  const platform = document.createElement("span");
+  platform.className = "platform";
+  platform.textContent = getPlatformNumber(train.timetable);
+  platform.setAttribute("aria-label", `${platform.textContent}番線`);
   const line = document.createElement("span");
-  line.className = "route-bar";
-  const lineName = document.createElement("span");
-  lineName.className = "sr-only";
-  lineName.textContent = train.timetable.line;
-  line.append(lineName);
+  line.className = "sr-only";
+  line.textContent = train.timetable.line;
 
   const service = document.createElement("span");
   service.className = "service";
@@ -165,13 +193,9 @@ function createTrainRow(train, now) {
     const isRapid = train.type === "快速";
     service.classList.add("is-shown");
     service.style.background = isRapid ? RAPID_COLOR : style.localColor;
-    // Each line is its own span so the two-line local label can be staggered like the on-board sign.
-    for (const text of isRapid ? ["快速"] : ["各駅", "停車"]) {
-      const lineSpan = document.createElement("span");
-      lineSpan.textContent = text;
-      service.append(lineSpan);
-    }
-    service.classList.toggle("is-two-line", !isRapid);
+    const label = document.createElement("span");
+    label.textContent = isRapid ? "快速" : "各停";
+    service.append(label);
   }
 
   const destination = document.createElement("span");
@@ -189,6 +213,7 @@ function createTrainRow(train, now) {
   time.className = "departure-time";
   time.dateTime = new Date(train.departureAt).toISOString();
   time.textContent = formatTime(train.hours % 24, train.minutes);
+  time.setAttribute("aria-label", `発車 ${time.textContent}`);
 
   const remainingValue = document.createElement("span");
   remainingValue.className = "remaining-value";
@@ -202,6 +227,6 @@ function createTrainRow(train, now) {
     remainingValue.append(String(remaining), unit);
   }
 
-  row.append(line, service, destination, time, remainingValue);
+  row.append(orderLabel, platform, line, service, destination, time, remainingValue);
   return row;
 }

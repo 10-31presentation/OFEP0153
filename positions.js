@@ -67,7 +67,7 @@ const AsakusaLive = (() => {
     const status = document.getElementById('position-status');
     const scope = document.getElementById('position-scope');
     const select = document.getElementById('station-select');
-    let raw = [], labels = null, lastFetch = null, failed = false, busy = false, timer = null, all = false, selectedTrain = null, revealedCode = null;
+    let raw = [], labels = null, lastFetch = null, failed = false, busy = false, timer = null, all = true, selectedTrain = null, revealedCode = null;
     const detail = document.getElementById("position-detail");
     const clock = value => new Intl.DateTimeFormat('ja-JP', {
       timeZone: 'Asia/Tokyo', hour:'2-digit', minute:'2-digit', second:'2-digit'
@@ -83,6 +83,7 @@ const AsakusaLive = (() => {
       const shown = nearby(valid, stations, select.value, all);
       const place = all ? '浅草線全線' : `${stations.find(s => s.code === select.value)?.name || ''}駅周辺（前後2駅）`;
       const scrollTop = list.parentElement.scrollTop;
+      const scrollLeft = list.parentElement.scrollLeft;
       const laneScroll = new Map(Array.from(list.querySelectorAll('[data-lane-key]'), lane => [lane.dataset.laneKey, lane.scrollLeft]));
       const focusedTrain = document.activeElement?.dataset?.trainId;
       const focusedStation = document.activeElement?.dataset?.stationCode;
@@ -103,6 +104,8 @@ const AsakusaLive = (() => {
           center.addEventListener('click', () => {
             select.value = slot.station.code;
             select.dispatchEvent(new Event('change', {bubbles:true}));
+            document.getElementById('view-departures').click();
+            document.getElementById('station-title').focus({preventScroll:true});
           });
         } else center.setAttribute('aria-hidden', 'true');
         for (const train of slot.trains) {
@@ -128,6 +131,7 @@ const AsakusaLive = (() => {
         return row;
       }));
       list.parentElement.scrollTop = scrollTop;
+      list.parentElement.scrollLeft = scrollLeft;
       for (const lane of list.querySelectorAll('[data-lane-key]')) lane.scrollLeft = laneScroll.get(lane.dataset.laneKey) || 0;
       const current = valid.find(train => train.id === selectedTrain);
       detail.hidden = !current;
@@ -163,7 +167,7 @@ const AsakusaLive = (() => {
         if (!scroll.clientHeight || revealedCode === select.value) return;
         const selected = [...list.querySelectorAll('[data-station-code]')].find(element => element.dataset.stationCode === select.value);
         if (selected) {
-          scroll.scrollTop += selected.getBoundingClientRect().top - scroll.getBoundingClientRect().top - scroll.clientHeight / 2 + selected.clientHeight / 2;
+          scroll.scrollLeft += selected.getBoundingClientRect().left - scroll.getBoundingClientRect().left - scroll.clientWidth / 2 + selected.clientWidth / 2;
           revealedCode = select.value;
         }
       });

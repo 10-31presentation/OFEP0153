@@ -132,6 +132,7 @@ async function loadStation(code) {
   stationCode.replaceChildren(letter, number);
   stationCode.setAttribute("aria-label", `駅番号 ${station.code}`);
   document.title = `Next Train | ${station.name}駅 ${station.code} | 都営浅草線`;
+  document.getElementById("station-title").textContent = `${station.name}駅の発車案内`;
   document.getElementById("data-updated").textContent = "";
   updateDirectionButtons();
   refreshBoard();

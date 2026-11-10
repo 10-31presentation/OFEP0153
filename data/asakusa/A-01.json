@@ -1,0 +1,3598 @@
+{
+  "line": "浅草線",
+  "source": "東京都交通局・公共交通オープンデータ協議会",
+  "sourceType": "odpt:StationTimetable",
+  "catalogUrl": "https://catalog.data.metro.tokyo.lg.jp/dataset/t000018d0000000052",
+  "resourceUrl": "https://ckan.odpt.org/dataset/r_station_timetable-toei",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "fetchedAt": "2026-11-03T11:01:44+00:00",
+  "station": {
+    "id": "odpt.Station:Toei.Asakusa.NishiMagome",
+    "name": "西馬込",
+    "code": "A-01",
+    "directions": [
+      "north"
+    ]
+  },
+  "holidays": {
+    "2025-01-01": "元日",
+    "2025-01-13": "成人の日",
+    "2025-02-11": "建国記念の日",
+    "2025-02-23": "天皇誕生日",
+    "2025-02-24": "天皇誕生日 振替休日",
+    "2025-03-20": "春分の日",
+    "2025-04-29": "昭和の日",
+    "2025-05-03": "憲法記念日",
+    "2025-05-04": "みどりの日",
+    "2025-05-05": "こどもの日",
+    "2025-05-06": "みどりの日 振替休日",
+    "2025-07-21": "海の日",
+    "2025-08-11": "山の日",
+    "2025-09-15": "敬老の日",
+    "2025-09-23": "秋分の日",
+    "2025-10-13": "スポーツの日",
+    "2025-11-03": "文化の日",
+    "2025-11-23": "勤労感謝の日",
+    "2025-11-24": "勤労感謝の日 振替休日",
+    "2026-01-01": "元日",
+    "2026-01-12": "成人の日",
+    "2026-02-11": "建国記念の日",
+    "2026-02-23": "天皇誕生日",
+    "2026-03-20": "春分の日",
+    "2026-04-29": "昭和の日",
+    "2026-05-03": "憲法記念日",
+    "2026-05-04": "みどりの日",
+    "2026-05-05": "こどもの日",
+    "2026-05-06": "憲法記念日 振替休日",
+    "2026-07-20": "海の日",
+    "2026-08-11": "山の日",
+    "2026-09-21": "敬老の日",
+    "2026-09-22": "国民の休日",
+    "2026-09-23": "秋分の日",
+    "2026-10-12": "スポーツの日",
+    "2026-11-03": "文化の日",
+    "2026-11-23": "勤労感謝の日",
+    "2027-01-01": "元日",
+    "2027-01-11": "成人の日",
+    "2027-02-11": "建国記念の日",
+    "2027-02-23": "天皇誕生日",
+    "2027-03-21": "春分の日",
+    "2027-03-22": "春分の日 振替休日",
+    "2027-04-29": "昭和の日",
+    "2027-05-03": "憲法記念日",
+    "2027-05-04": "みどりの日",
+    "2027-05-05": "こどもの日",
+    "2027-07-19": "海の日",
+    "2027-08-11": "山の日",
+    "2027-09-20": "敬老の日",
+    "2027-09-23": "秋分の日",
+    "2027-10-11": "スポーツの日",
+    "2027-11-03": "文化の日",
+    "2027-11-23": "勤労感謝の日"
+  },
+  "timetables": [
+    {
+      "id": "odpt.StationTimetable:Toei.Asakusa.NishiMagome.Northbound.SaturdayHoliday",
+      "stationId": "odpt.Station:Toei.Asakusa.NishiMagome",
+      "line": "浅草線",
+      "direction": "north",
+      "dayType": "holiday",
+      "issued": "2025-12-13",
+      "modified": "2025-12-15T14:00:00+09:00",
+      "url": "https://ckan.odpt.org/dataset/r_station_timetable-toei",
+      "departures": [
+        {
+          "time": "05:00",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "501T",
+          "notes": []
+        },
+        {
+          "time": "05:07",
+          "type": "普通",
+          "destination": "青砥",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Oshiage.Aoto"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "509T",
+          "notes": []
+        },
+        {
+          "time": "05:18",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "511Ta",
+          "notes": []
+        },
+        {
+          "time": "05:27",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "513T",
+          "notes": []
+        },
+        {
+          "time": "05:36",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "579H",
+          "notes": []
+        },
+        {
+          "time": "05:46",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "507Tb",
+          "notes": []
+        },
+        {
+          "time": "05:56",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "511Tb",
+          "notes": []
+        },
+        {
+          "time": "06:05",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "615Ta",
+          "notes": []
+        },
+        {
+          "time": "06:12",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "613T",
+          "notes": []
+        },
+        {
+          "time": "06:19",
+          "type": "普通",
+          "destination": "青砥",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Oshiage.Aoto"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "605T",
+          "notes": []
+        },
+        {
+          "time": "06:26",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "607T",
+          "notes": []
+        },
+        {
+          "time": "06:32",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "617T",
+          "notes": []
+        },
+        {
+          "time": "06:39",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "625N",
+          "notes": []
+        },
+        {
+          "time": "06:47",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "615Tb",
+          "notes": []
+        },
+        {
+          "time": "06:56",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "609T",
+          "notes": []
+        },
+        {
+          "time": "07:02",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "755Ka",
+          "notes": []
+        },
+        {
+          "time": "07:07",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "707Ta",
+          "notes": []
+        },
+        {
+          "time": "07:13",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "733Ta",
+          "notes": []
+        },
+        {
+          "time": "07:18",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "725N",
+          "notes": []
+        },
+        {
+          "time": "07:23",
+          "type": "アクセス特急",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.NaritaSkyAccess.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AccessExpress",
+          "trainNumber": "703K",
+          "notes": []
+        },
+        {
+          "time": "07:27",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "719T",
+          "notes": []
+        },
+        {
+          "time": "07:32",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "715T",
+          "notes": []
+        },
+        {
+          "time": "07:36",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "709T",
+          "notes": []
+        },
+        {
+          "time": "07:42",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "757K",
+          "notes": []
+        },
+        {
+          "time": "07:47",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "707Tb",
+          "notes": []
+        },
+        {
+          "time": "07:52",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "733Tb",
+          "notes": []
+        },
+        {
+          "time": "07:57",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "721Nb",
+          "notes": []
+        },
+        {
+          "time": "08:02",
+          "type": "普通",
+          "destination": "青砥",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Oshiage.Aoto"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "837T",
+          "notes": []
+        },
+        {
+          "time": "08:07",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "819Ta",
+          "notes": []
+        },
+        {
+          "time": "08:12",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "815T",
+          "notes": []
+        },
+        {
+          "time": "08:17",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "809Ta",
+          "notes": []
+        },
+        {
+          "time": "08:22",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "801T",
+          "notes": []
+        },
+        {
+          "time": "08:27",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "807T",
+          "notes": []
+        },
+        {
+          "time": "08:32",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "833T",
+          "notes": []
+        },
+        {
+          "time": "08:37",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "883K",
+          "notes": []
+        },
+        {
+          "time": "08:41",
+          "type": "快速",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Rapid",
+          "trainNumber": "865K",
+          "notes": []
+        },
+        {
+          "time": "08:45",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "821T",
+          "notes": []
+        },
+        {
+          "time": "08:51",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "819Tb",
+          "notes": []
+        },
+        {
+          "time": "08:58",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "809Tb",
+          "notes": []
+        },
+        {
+          "time": "09:02",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "967Ka",
+          "notes": []
+        },
+        {
+          "time": "09:10",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "907Ta",
+          "notes": []
+        },
+        {
+          "time": "09:16",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "933Ta",
+          "notes": []
+        },
+        {
+          "time": "09:22",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "983K",
+          "notes": []
+        },
+        {
+          "time": "09:29",
+          "type": "普通",
+          "destination": "押上",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Oshiage"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "931N",
+          "notes": []
+        },
+        {
+          "time": "09:39",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "909T",
+          "notes": []
+        },
+        {
+          "time": "09:44",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "985K",
+          "notes": []
+        },
+        {
+          "time": "09:50",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "907Tb",
+          "notes": []
+        },
+        {
+          "time": "09:58",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "933Tb",
+          "notes": []
+        },
+        {
+          "time": "10:06",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1083Ka",
+          "notes": []
+        },
+        {
+          "time": "10:14",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1035N",
+          "notes": []
+        },
+        {
+          "time": "10:23",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1009T",
+          "notes": []
+        },
+        {
+          "time": "10:33",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1085K",
+          "notes": []
+        },
+        {
+          "time": "10:43",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1033N",
+          "notes": []
+        },
+        {
+          "time": "10:51",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1083Kb",
+          "notes": []
+        },
+        {
+          "time": "10:59",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1027T",
+          "notes": []
+        },
+        {
+          "time": "11:04",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1131Na",
+          "notes": []
+        },
+        {
+          "time": "11:10",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1109T",
+          "notes": []
+        },
+        {
+          "time": "11:17",
+          "type": "普通",
+          "destination": "押上",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Oshiage"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1113T",
+          "notes": []
+        },
+        {
+          "time": "11:24",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1133N",
+          "notes": []
+        },
+        {
+          "time": "11:34",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1123N",
+          "notes": []
+        },
+        {
+          "time": "11:44",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1127T",
+          "notes": []
+        },
+        {
+          "time": "11:54",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1131Nb",
+          "notes": []
+        },
+        {
+          "time": "12:04",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1237Na",
+          "notes": []
+        },
+        {
+          "time": "12:14",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1233N",
+          "notes": []
+        },
+        {
+          "time": "12:23",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1225N",
+          "notes": []
+        },
+        {
+          "time": "12:29",
+          "type": "普通",
+          "destination": "押上",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Oshiage"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1227T",
+          "notes": []
+        },
+        {
+          "time": "12:35",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1221N",
+          "notes": []
+        },
+        {
+          "time": "12:44",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1237Nb",
+          "notes": []
+        },
+        {
+          "time": "12:54",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1229N",
+          "notes": []
+        },
+        {
+          "time": "13:04",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1313Ta",
+          "notes": []
+        },
+        {
+          "time": "13:14",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1325N",
+          "notes": []
+        },
+        {
+          "time": "13:24",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1307T",
+          "notes": []
+        },
+        {
+          "time": "13:34",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1337N",
+          "notes": []
+        },
+        {
+          "time": "13:43",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1335N",
+          "notes": []
+        },
+        {
+          "time": "13:49",
+          "type": "普通",
+          "destination": "押上",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Oshiage"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1313Tb",
+          "notes": []
+        },
+        {
+          "time": "13:55",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1385K",
+          "notes": []
+        },
+        {
+          "time": "14:04",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1407Ta",
+          "notes": []
+        },
+        {
+          "time": "14:14",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1483K",
+          "notes": []
+        },
+        {
+          "time": "14:24",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1427T",
+          "notes": []
+        },
+        {
+          "time": "14:34",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1435N",
+          "notes": []
+        },
+        {
+          "time": "14:44",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1481K",
+          "notes": []
+        },
+        {
+          "time": "14:54",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1407Tb",
+          "notes": []
+        },
+        {
+          "time": "15:03",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1523Na",
+          "notes": []
+        },
+        {
+          "time": "15:09",
+          "type": "普通",
+          "destination": "押上",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Oshiage"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1527T",
+          "notes": []
+        },
+        {
+          "time": "15:15",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1531N",
+          "notes": []
+        },
+        {
+          "time": "15:24",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1581K",
+          "notes": []
+        },
+        {
+          "time": "15:34",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1533N",
+          "notes": []
+        },
+        {
+          "time": "15:44",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1513T",
+          "notes": []
+        },
+        {
+          "time": "15:54",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1523Nb",
+          "notes": []
+        },
+        {
+          "time": "16:04",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1621Na",
+          "notes": []
+        },
+        {
+          "time": "16:14",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1681K",
+          "notes": []
+        },
+        {
+          "time": "16:23",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1627N",
+          "notes": []
+        },
+        {
+          "time": "16:29",
+          "type": "普通",
+          "destination": "押上",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Oshiage"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1613T",
+          "notes": []
+        },
+        {
+          "time": "16:35",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1641T",
+          "notes": []
+        },
+        {
+          "time": "16:43",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1623T",
+          "notes": []
+        },
+        {
+          "time": "16:49",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1621Nb",
+          "notes": []
+        },
+        {
+          "time": "16:54",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1637N",
+          "notes": []
+        },
+        {
+          "time": "17:02",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1727Ta",
+          "notes": []
+        },
+        {
+          "time": "17:07",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1727Na",
+          "notes": []
+        },
+        {
+          "time": "17:13",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1725T",
+          "notes": []
+        },
+        {
+          "time": "17:21",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1785K",
+          "notes": []
+        },
+        {
+          "time": "17:27",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1723T",
+          "notes": []
+        },
+        {
+          "time": "17:34",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1721N",
+          "notes": []
+        },
+        {
+          "time": "17:39",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1729N",
+          "notes": []
+        },
+        {
+          "time": "17:44",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1727Tb",
+          "notes": []
+        },
+        {
+          "time": "17:50",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1727Nb",
+          "notes": []
+        },
+        {
+          "time": "17:57",
+          "type": "普通",
+          "destination": "押上",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Oshiage"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1705T",
+          "notes": []
+        },
+        {
+          "time": "18:03",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1885Ka",
+          "notes": []
+        },
+        {
+          "time": "18:09",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1823Ta",
+          "notes": []
+        },
+        {
+          "time": "18:14",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1835N",
+          "notes": []
+        },
+        {
+          "time": "18:21",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1813T",
+          "notes": []
+        },
+        {
+          "time": "18:28",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1829N",
+          "notes": []
+        },
+        {
+          "time": "18:33",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1827T",
+          "notes": []
+        },
+        {
+          "time": "18:41",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1807T",
+          "notes": []
+        },
+        {
+          "time": "18:47",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1885Kb",
+          "notes": []
+        },
+        {
+          "time": "18:53",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1823Tb",
+          "notes": []
+        },
+        {
+          "time": "19:01",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1931Na",
+          "notes": []
+        },
+        {
+          "time": "19:08",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1913Ta",
+          "notes": []
+        },
+        {
+          "time": "19:13",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1929N",
+          "notes": []
+        },
+        {
+          "time": "19:20",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1933N",
+          "notes": []
+        },
+        {
+          "time": "19:26",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1907T",
+          "notes": []
+        },
+        {
+          "time": "19:31",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1985K",
+          "notes": []
+        },
+        {
+          "time": "19:39",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1981K",
+          "notes": []
+        },
+        {
+          "time": "19:46",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1931Nb",
+          "notes": []
+        },
+        {
+          "time": "19:52",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1913Tb",
+          "notes": []
+        },
+        {
+          "time": "20:00",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2041Ta",
+          "notes": []
+        },
+        {
+          "time": "20:06",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2033Na",
+          "notes": []
+        },
+        {
+          "time": "20:12",
+          "type": "アクセス特急",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.NaritaSkyAccess.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AccessExpress",
+          "trainNumber": "2007T",
+          "notes": []
+        },
+        {
+          "time": "20:19",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2039T",
+          "notes": []
+        },
+        {
+          "time": "20:26",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2081K",
+          "notes": []
+        },
+        {
+          "time": "20:31",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2031N",
+          "notes": []
+        },
+        {
+          "time": "20:36",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2089K",
+          "notes": []
+        },
+        {
+          "time": "20:45",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2041Tb",
+          "notes": []
+        },
+        {
+          "time": "20:51",
+          "type": "普通",
+          "destination": "青砥",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Oshiage.Aoto"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2033Nb",
+          "notes": []
+        },
+        {
+          "time": "20:57",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2021T",
+          "notes": []
+        },
+        {
+          "time": "21:06",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2139T",
+          "notes": []
+        },
+        {
+          "time": "21:16",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2181K",
+          "notes": []
+        },
+        {
+          "time": "21:26",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2189K",
+          "notes": []
+        },
+        {
+          "time": "21:34",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2141T",
+          "notes": []
+        },
+        {
+          "time": "21:41",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2151H",
+          "notes": []
+        },
+        {
+          "time": "21:49",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2121T",
+          "notes": []
+        },
+        {
+          "time": "21:57",
+          "type": "快速",
+          "destination": "京成成田",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiNarita"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Rapid",
+          "trainNumber": "2153K",
+          "notes": []
+        },
+        {
+          "time": "22:07",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2227Ta",
+          "notes": []
+        },
+        {
+          "time": "22:18",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2289K",
+          "notes": []
+        },
+        {
+          "time": "22:28",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2211K",
+          "notes": []
+        },
+        {
+          "time": "22:39",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2245H",
+          "notes": []
+        },
+        {
+          "time": "22:49",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2227Tb",
+          "notes": []
+        },
+        {
+          "time": "22:59",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2237T",
+          "notes": []
+        },
+        {
+          "time": "23:08",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2381K",
+          "notes": []
+        },
+        {
+          "time": "23:20",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2345H",
+          "notes": []
+        },
+        {
+          "time": "23:29",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2327T",
+          "notes": []
+        },
+        {
+          "time": "23:39",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2337T",
+          "notes": []
+        },
+        {
+          "time": "23:49",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2331N",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "id": "odpt.StationTimetable:Toei.Asakusa.NishiMagome.Northbound.Weekday",
+      "stationId": "odpt.Station:Toei.Asakusa.NishiMagome",
+      "line": "浅草線",
+      "direction": "north",
+      "dayType": "weekday",
+      "issued": "2025-12-15",
+      "modified": "2025-12-15T14:00:00+09:00",
+      "url": "https://ckan.odpt.org/dataset/r_station_timetable-toei",
+      "departures": [
+        {
+          "time": "05:00",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "501T",
+          "notes": []
+        },
+        {
+          "time": "05:08",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "511T",
+          "notes": []
+        },
+        {
+          "time": "05:17",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "513T",
+          "notes": []
+        },
+        {
+          "time": "05:27",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "515T",
+          "notes": []
+        },
+        {
+          "time": "05:35",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "577H",
+          "notes": []
+        },
+        {
+          "time": "05:42",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "519T",
+          "notes": []
+        },
+        {
+          "time": "05:48",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "509Tb",
+          "notes": []
+        },
+        {
+          "time": "05:54",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "521T",
+          "notes": []
+        },
+        {
+          "time": "06:01",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "613Ta",
+          "notes": []
+        },
+        {
+          "time": "06:08",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "683H",
+          "notes": []
+        },
+        {
+          "time": "06:14",
+          "type": "普通",
+          "destination": "印西牧の原",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.InzaiMakinohara"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "623T",
+          "notes": []
+        },
+        {
+          "time": "06:22",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "605T",
+          "notes": []
+        },
+        {
+          "time": "06:31",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "619T",
+          "notes": []
+        },
+        {
+          "time": "06:39",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "627N",
+          "notes": []
+        },
+        {
+          "time": "06:47",
+          "type": "普通",
+          "destination": "押上",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Oshiage"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "613Tb",
+          "notes": []
+        },
+        {
+          "time": "06:53",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "679K",
+          "notes": []
+        },
+        {
+          "time": "06:58",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "625T",
+          "notes": []
+        },
+        {
+          "time": "07:02",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "711Ta",
+          "notes": []
+        },
+        {
+          "time": "07:06",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "727Ta",
+          "notes": []
+        },
+        {
+          "time": "07:10",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "729Ta",
+          "notes": []
+        },
+        {
+          "time": "07:14",
+          "type": "アクセス特急",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.NaritaSkyAccess.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AccessExpress",
+          "trainNumber": "719T",
+          "notes": []
+        },
+        {
+          "time": "07:18",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "731Ta",
+          "notes": []
+        },
+        {
+          "time": "07:22",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "709K",
+          "notes": []
+        },
+        {
+          "time": "07:25",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "733T",
+          "notes": []
+        },
+        {
+          "time": "07:31",
+          "type": "普通",
+          "destination": "印西牧の原",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.InzaiMakinohara"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "729N",
+          "notes": []
+        },
+        {
+          "time": "07:37",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "725T",
+          "notes": []
+        },
+        {
+          "time": "07:43",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "781K",
+          "notes": []
+        },
+        {
+          "time": "07:48",
+          "type": "普通",
+          "destination": "印西牧の原",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.InzaiMakinohara"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "727Tb",
+          "notes": []
+        },
+        {
+          "time": "07:54",
+          "type": "アクセス特急",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.NaritaSkyAccess.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AccessExpress",
+          "trainNumber": "729Tb",
+          "notes": []
+        },
+        {
+          "time": "07:59",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "731Tb",
+          "notes": []
+        },
+        {
+          "time": "08:05",
+          "type": "普通",
+          "destination": "印西牧の原",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.InzaiMakinohara"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "831N",
+          "notes": []
+        },
+        {
+          "time": "08:10",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "833T",
+          "notes": []
+        },
+        {
+          "time": "08:16",
+          "type": "普通",
+          "destination": "青砥",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Oshiage.Aoto"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "845T",
+          "notes": []
+        },
+        {
+          "time": "08:21",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "853K",
+          "notes": []
+        },
+        {
+          "time": "08:26",
+          "type": "普通",
+          "destination": "押上",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Oshiage"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "813T",
+          "notes": []
+        },
+        {
+          "time": "08:32",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "855K",
+          "notes": []
+        },
+        {
+          "time": "08:37",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "851T",
+          "notes": []
+        },
+        {
+          "time": "08:41",
+          "type": "普通",
+          "destination": "印西牧の原",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.InzaiMakinohara"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "857K",
+          "notes": []
+        },
+        {
+          "time": "08:46",
+          "type": "アクセス特急",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.NaritaSkyAccess.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AccessExpress",
+          "trainNumber": "803K",
+          "notes": []
+        },
+        {
+          "time": "08:51",
+          "type": "快速",
+          "destination": "京成佐倉",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiSakura"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Rapid",
+          "trainNumber": "859K",
+          "notes": []
+        },
+        {
+          "time": "08:55",
+          "type": "普通",
+          "destination": "印西牧の原",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.InzaiMakinohara"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "835N",
+          "notes": []
+        },
+        {
+          "time": "09:03",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "961Ka",
+          "notes": []
+        },
+        {
+          "time": "09:10",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "963K",
+          "notes": []
+        },
+        {
+          "time": "09:16",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "921T",
+          "notes": []
+        },
+        {
+          "time": "09:24",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "907T",
+          "notes": []
+        },
+        {
+          "time": "09:33",
+          "type": "快速",
+          "destination": "京成佐倉",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiSakura"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Rapid",
+          "trainNumber": "965K",
+          "notes": []
+        },
+        {
+          "time": "09:41",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "967K",
+          "notes": []
+        },
+        {
+          "time": "09:47",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "961Kb",
+          "notes": []
+        },
+        {
+          "time": "09:55",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "987K",
+          "notes": []
+        },
+        {
+          "time": "10:03",
+          "type": "快特",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1069K",
+          "notes": []
+        },
+        {
+          "time": "10:13",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1079K",
+          "notes": []
+        },
+        {
+          "time": "10:23",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1067K",
+          "notes": []
+        },
+        {
+          "time": "10:34",
+          "type": "快速",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Rapid",
+          "trainNumber": "1071K",
+          "notes": []
+        },
+        {
+          "time": "10:44",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1061K",
+          "notes": []
+        },
+        {
+          "time": "10:54",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1029N",
+          "notes": []
+        },
+        {
+          "time": "11:03",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1127Ta",
+          "notes": []
+        },
+        {
+          "time": "11:09",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1167K",
+          "notes": []
+        },
+        {
+          "time": "11:16",
+          "type": "普通",
+          "destination": "押上",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Oshiage"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1111T",
+          "notes": []
+        },
+        {
+          "time": "11:24",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1125T",
+          "notes": []
+        },
+        {
+          "time": "11:34",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1161K",
+          "notes": []
+        },
+        {
+          "time": "11:44",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1131T",
+          "notes": []
+        },
+        {
+          "time": "11:54",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1127Tb",
+          "notes": []
+        },
+        {
+          "time": "12:04",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1285Ka",
+          "notes": []
+        },
+        {
+          "time": "12:14",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1225T",
+          "notes": []
+        },
+        {
+          "time": "12:23",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1209T",
+          "notes": []
+        },
+        {
+          "time": "12:29",
+          "type": "普通",
+          "destination": "押上",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Oshiage"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1231T",
+          "notes": []
+        },
+        {
+          "time": "12:35",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1233N",
+          "notes": []
+        },
+        {
+          "time": "12:44",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1285Kb",
+          "notes": []
+        },
+        {
+          "time": "12:54",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1237N",
+          "notes": []
+        },
+        {
+          "time": "13:04",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1311Ta",
+          "notes": []
+        },
+        {
+          "time": "13:14",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1309T",
+          "notes": []
+        },
+        {
+          "time": "13:24",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1339N",
+          "notes": []
+        },
+        {
+          "time": "13:34",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1385K",
+          "notes": []
+        },
+        {
+          "time": "13:43",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1327N",
+          "notes": []
+        },
+        {
+          "time": "13:49",
+          "type": "普通",
+          "destination": "押上",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Oshiage"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1311Tb",
+          "notes": []
+        },
+        {
+          "time": "13:55",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1321N",
+          "notes": []
+        },
+        {
+          "time": "14:04",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1439Na",
+          "notes": []
+        },
+        {
+          "time": "14:14",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1429N",
+          "notes": []
+        },
+        {
+          "time": "14:24",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1431T",
+          "notes": []
+        },
+        {
+          "time": "14:34",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1427N",
+          "notes": []
+        },
+        {
+          "time": "14:44",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1467K",
+          "notes": []
+        },
+        {
+          "time": "14:54",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1439Nb",
+          "notes": []
+        },
+        {
+          "time": "15:03",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1561Ka",
+          "notes": []
+        },
+        {
+          "time": "15:09",
+          "type": "普通",
+          "destination": "青砥",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Oshiage.Aoto"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1531T",
+          "notes": []
+        },
+        {
+          "time": "15:15",
+          "type": "快速",
+          "destination": "京成佐倉",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiSakura"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Rapid",
+          "trainNumber": "1527T",
+          "notes": []
+        },
+        {
+          "time": "15:24",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1567K",
+          "notes": []
+        },
+        {
+          "time": "15:33",
+          "type": "快速",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Rapid",
+          "trainNumber": "1525T",
+          "notes": []
+        },
+        {
+          "time": "15:41",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1511T",
+          "notes": []
+        },
+        {
+          "time": "15:47",
+          "type": "快速",
+          "destination": "京成佐倉",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiSakura"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Rapid",
+          "trainNumber": "1561Kb",
+          "notes": []
+        },
+        {
+          "time": "15:56",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1557K",
+          "notes": []
+        },
+        {
+          "time": "16:05",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1667Ka",
+          "notes": []
+        },
+        {
+          "time": "16:13",
+          "type": "快速",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Rapid",
+          "trainNumber": "1653T",
+          "notes": []
+        },
+        {
+          "time": "16:18",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1637N",
+          "notes": []
+        },
+        {
+          "time": "16:24",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1687H",
+          "notes": []
+        },
+        {
+          "time": "16:31",
+          "type": "快速",
+          "destination": "京成佐倉",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiSakura"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Rapid",
+          "trainNumber": "1655T",
+          "notes": []
+        },
+        {
+          "time": "16:35",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1631N",
+          "notes": []
+        },
+        {
+          "time": "16:41",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1657K",
+          "notes": []
+        },
+        {
+          "time": "16:47",
+          "type": "普通",
+          "destination": "印西牧の原",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.InzaiMakinohara"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1633T",
+          "notes": []
+        },
+        {
+          "time": "16:51",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1667Kb",
+          "notes": []
+        },
+        {
+          "time": "16:58",
+          "type": "特急",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1687Kb",
+          "notes": []
+        },
+        {
+          "time": "17:03",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1701K",
+          "notes": []
+        },
+        {
+          "time": "17:08",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1757Ta",
+          "notes": []
+        },
+        {
+          "time": "17:12",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1773K",
+          "notes": []
+        },
+        {
+          "time": "17:16",
+          "type": "アクセス特急",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.NaritaSkyAccess.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AccessExpress",
+          "trainNumber": "1759T",
+          "notes": []
+        },
+        {
+          "time": "17:21",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1755K",
+          "notes": []
+        },
+        {
+          "time": "17:26",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1731N",
+          "notes": []
+        },
+        {
+          "time": "17:31",
+          "type": "快特",
+          "destination": "京成成田",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiNarita"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1761T",
+          "notes": []
+        },
+        {
+          "time": "17:36",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1767K",
+          "notes": []
+        },
+        {
+          "time": "17:42",
+          "type": "特急",
+          "destination": "芝山千代田",
+          "destinationStationIds": [
+            "odpt.Station:Shibayama.Shibayama.ShibayamaChiyoda"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1751K",
+          "notes": []
+        },
+        {
+          "time": "17:46",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1749T",
+          "notes": []
+        },
+        {
+          "time": "17:51",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1795K",
+          "notes": []
+        },
+        {
+          "time": "17:57",
+          "type": "普通",
+          "destination": "印西牧の原",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.InzaiMakinohara"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1763T",
+          "notes": []
+        },
+        {
+          "time": "18:03",
+          "type": "特急",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1873K",
+          "notes": []
+        },
+        {
+          "time": "18:07",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1879Ka",
+          "notes": []
+        },
+        {
+          "time": "18:12",
+          "type": "快特",
+          "destination": "芝山千代田",
+          "destinationStationIds": [
+            "odpt.Station:Shibayama.Shibayama.ShibayamaChiyoda"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1855K",
+          "notes": []
+        },
+        {
+          "time": "18:15",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1843Ta",
+          "notes": []
+        },
+        {
+          "time": "18:21",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1867K",
+          "notes": []
+        },
+        {
+          "time": "18:25",
+          "type": "特急",
+          "destination": "京成成田",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiNarita"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1849T",
+          "notes": []
+        },
+        {
+          "time": "18:32",
+          "type": "快特",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1895K",
+          "notes": []
+        },
+        {
+          "time": "18:36",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1871K",
+          "notes": []
+        },
+        {
+          "time": "18:41",
+          "type": "特急",
+          "destination": "京成成田",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiNarita"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1859K",
+          "notes": []
+        },
+        {
+          "time": "18:46",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1865T",
+          "notes": []
+        },
+        {
+          "time": "18:50",
+          "type": "快特",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1879Kb",
+          "notes": []
+        },
+        {
+          "time": "18:55",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1843Tb",
+          "notes": []
+        },
+        {
+          "time": "19:00",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1965Ka",
+          "notes": []
+        },
+        {
+          "time": "19:07",
+          "type": "普通",
+          "destination": "印西牧の原",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.InzaiMakinohara"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1927N",
+          "notes": []
+        },
+        {
+          "time": "19:12",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1967K",
+          "notes": []
+        },
+        {
+          "time": "19:18",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1971K",
+          "notes": []
+        },
+        {
+          "time": "19:24",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1969K",
+          "notes": []
+        },
+        {
+          "time": "19:29",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1901T",
+          "notes": []
+        },
+        {
+          "time": "19:35",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1951H",
+          "notes": []
+        },
+        {
+          "time": "19:43",
+          "type": "特急",
+          "destination": "成田空港",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.NaritaAirportTerminal1"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1965Kb",
+          "notes": []
+        },
+        {
+          "time": "19:48",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1933N",
+          "notes": []
+        },
+        {
+          "time": "19:56",
+          "type": "普通",
+          "destination": "印西牧の原",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.InzaiMakinohara"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1925T",
+          "notes": []
+        },
+        {
+          "time": "20:03",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2023Na",
+          "notes": []
+        },
+        {
+          "time": "20:10",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2069Ka",
+          "notes": []
+        },
+        {
+          "time": "20:18",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2007K",
+          "notes": []
+        },
+        {
+          "time": "20:24",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2053T",
+          "notes": []
+        },
+        {
+          "time": "20:30",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2053K",
+          "notes": []
+        },
+        {
+          "time": "20:37",
+          "type": "特急",
+          "destination": "京成成田",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiNarita"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "2091K",
+          "notes": []
+        },
+        {
+          "time": "20:42",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2033N",
+          "notes": []
+        },
+        {
+          "time": "20:46",
+          "type": "特急",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "2055T",
+          "notes": []
+        },
+        {
+          "time": "20:51",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2023Nb",
+          "notes": []
+        },
+        {
+          "time": "20:56",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2069Kb",
+          "notes": []
+        },
+        {
+          "time": "21:04",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2107K",
+          "notes": []
+        },
+        {
+          "time": "21:09",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2111T",
+          "notes": []
+        },
+        {
+          "time": "21:16",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2187K",
+          "notes": []
+        },
+        {
+          "time": "21:23",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2157K",
+          "notes": []
+        },
+        {
+          "time": "21:28",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2121N",
+          "notes": []
+        },
+        {
+          "time": "21:36",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2169K",
+          "notes": []
+        },
+        {
+          "time": "21:44",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2109K",
+          "notes": []
+        },
+        {
+          "time": "21:51",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2123N",
+          "notes": []
+        },
+        {
+          "time": "22:00",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2225Na",
+          "notes": []
+        },
+        {
+          "time": "22:10",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2231N",
+          "notes": []
+        },
+        {
+          "time": "22:19",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2269Ka",
+          "notes": []
+        },
+        {
+          "time": "22:25",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2209K",
+          "notes": []
+        },
+        {
+          "time": "22:30",
+          "type": "普通",
+          "destination": "印旛日本医大",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.ImbaNihonIdai"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2277K",
+          "notes": []
+        },
+        {
+          "time": "22:39",
+          "type": "快速",
+          "destination": "京成成田",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiNarita"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Rapid",
+          "trainNumber": "2259K",
+          "notes": []
+        },
+        {
+          "time": "22:49",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2225Nb",
+          "notes": []
+        },
+        {
+          "time": "22:57",
+          "type": "快特",
+          "destination": "京成成田",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiNarita"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "2269Kb",
+          "notes": []
+        },
+        {
+          "time": "23:03",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2303Ta",
+          "notes": []
+        },
+        {
+          "time": "23:09",
+          "type": "普通",
+          "destination": "印西牧の原",
+          "destinationStationIds": [
+            "odpt.Station:Hokuso.Hokuso.InzaiMakinohara"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2309K",
+          "notes": []
+        },
+        {
+          "time": "23:20",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2365T",
+          "notes": []
+        },
+        {
+          "time": "23:32",
+          "type": "普通",
+          "destination": "京成高砂",
+          "destinationStationIds": [
+            "odpt.Station:Keisei.Main.KeiseiTakasago"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2325N",
+          "notes": []
+        },
+        {
+          "time": "23:49",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2303Tb",
+          "notes": []
+        }
+      ]
+    }
+  ]
+}

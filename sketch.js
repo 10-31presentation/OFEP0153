@@ -1,13 +1,27 @@
 // Relative path so it also works under a GitHub Pages project URL (/<repo>/).
-const DATA_URL = "data/tamachi.json";
-const LINE_STYLES = {
-  // Yamanote runs locals only, so its service badge is left blank.
-  "山手線": { localColor: "#5a9e2a", showService: false },
-  "京浜東北線・根岸線": { localColor: "#0092d0", showService: true }
+const DATA_URL = "data/asakusa/index.json";
+const DEFAULT_STATION = "A-08";
+// Color families follow Keisei's official stop guide (including its Keikyu legend).
+// https://www.keisei.co.jp/keisei/tetudou/railmap/railmap_250401.pdf
+// These screen shades preserve those families and give text at least 4.5:1 contrast;
+// they are not a claim to reproduce official RGB specifications.
+const SERVICE_STYLES = {
+  "普通": { background: "#333333", foreground: "#ffffff" },
+  "各駅停車": { background: "#333333", foreground: "#ffffff" },
+  "快特": { background: "#00803e", foreground: "#ffffff" },
+  "特急": { background: "#c62032", foreground: "#ffffff" },
+  "急行": { background: "#0066b3", foreground: "#ffffff" },
+  "エアポート急行": { background: "#0066b3", foreground: "#ffffff" },
+  "快速特急": { background: "#00803e", foreground: "#ffffff" },
+  "エアポート快特": { background: "#f08300", foreground: "#1a1a1a" },
+  "アクセス特急": { background: "#f08300", foreground: "#1a1a1a" },
+  "快速": { background: "#c41e78", foreground: "#ffffff" },
+  "通勤特急": { background: "#75cae9", foreground: "#1a1a1a" }
 };
-// Like the on-board LED displays (E233 Keihin-Tohoku: local = sky blue, rapid = pink),
-// locals use the line color. Colors are slightly darkened so white text stays readable.
-const RAPID_COLOR = "#e4007f";
+
+function getServiceStyle(train) {
+  return SERVICE_STYLES[train.type] ?? SERVICE_STYLES["普通"];
+}
 const TRAINS_PER_DIRECTION = 4;
 const CLOCK_FONT = '500 88px "Google Sans Code"';
 // Timetable hours run 04:00-24:59; earlier times belong to the previous service day.
@@ -18,29 +32,49 @@ const trainList = document.getElementById("train-list");
 const emptyElement = document.getElementById("empty-state");
 const timeElement = document.getElementById("current-time");
 const liveElement = document.getElementById("live-region");
+const stationSelect = document.getElementById("station-select");
+const stationCode = document.getElementById("station-code");
 let timetableData = null;
+let stations = [];
 let loadError = false;
+let loadVersion = 0;
 let lastSecond = -1;
 let lastListState = null;
 let lastAnnouncement = "";
-let selectedPlatform = "all";
+let selectedDirection = "all";
 
-document.querySelectorAll("[data-platform]").forEach((button) => {
+stationSelect.addEventListener("change", () => loadStation(stationSelect.value));
+document.querySelectorAll("[data-direction]").forEach((button) => {
   button.addEventListener("click", () => {
-    selectedPlatform = button.dataset.platform;
-    document.querySelectorAll("[data-platform]").forEach((option) => {
-      option.setAttribute("aria-pressed", String(option.dataset.platform === selectedPlatform));
-    });
+    if (button.disabled) return;
+    selectedDirection = button.dataset.direction;
+    updateDirectionButtons();
     lastListState = null;
-    const now = new Date();
-    updateBoard(now, new Date(now.getTime() + JST_OFFSET_MS));
+    refreshBoard();
   });
 });
 
-function getPlatformNumber(timetable) {
-  return timetable.line === "山手線"
-    ? ({ "内回り": "2", "外回り": "3" }[timetable.bound] ?? "—")
-    : ({ "北行": "1", "南行": "4" }[timetable.bound] ?? "—");
+function refreshBoard() {
+  const now = new Date();
+  updateBoard(now, new Date(now.getTime() + JST_OFFSET_MS));
+}
+
+function updateDirectionButtons() {
+  const station = stations.find((item) => item.code === stationSelect.value);
+  document.querySelectorAll("[data-direction]").forEach((button) => {
+    const direction = button.dataset.direction;
+    const isSengakuji = station?.code === "A-07";
+    button.hidden = direction !== "all" && !station?.directions.includes(direction) && !(direction === "keikyu" && isSengakuji);
+    button.disabled = direction === "keikyu" && !station?.keikyuAvailable;
+    if (direction === "keikyu") button.textContent = station?.keikyuAvailable ? "京急線方面" : "京急線方面（未取得）";
+    button.setAttribute("aria-pressed", String(direction === selectedDirection));
+    if (direction === "all") button.textContent = station?.directions.length === 1 ? "すべて" : station?.directions.length === 3 ? "全方面" : "両方面";
+    if (direction === "south") button.textContent = station && station.code <= "A-07" ? "西馬込方面" : "西馬込・京急線方面";
+  });
+  const note = document.getElementById("station-data-note");
+  note.hidden = station?.code !== "A-07" || Boolean(station?.keikyuAvailable);
+  note.textContent = "京急線方面の時刻表は未取得です。現在は西馬込方面・押上方面のみ表示しています。";
+  document.getElementById("keikyu-credit").hidden = !station?.keikyuAvailable;
 }
 
 function setup() {
@@ -53,16 +87,77 @@ function setup() {
   loadTimetable();
 }
 
+async function fetchJson(url) {
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json();
+}
+
 async function loadTimetable() {
   try {
-    const response = await fetch(DATA_URL);
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    timetableData = await response.json();
+    const manifest = await fetchJson(DATA_URL);
+    if (manifest.sourceType !== "odpt:StationTimetable" || manifest.stations?.length !== 20) {
+      throw new Error("Invalid Asakusa station index");
+    }
+    stations = manifest.stations;
+    if (typeof AsakusaLive !== "undefined") AsakusaLive.start(stations, SERVICE_STYLES);
+    stationSelect.replaceChildren(...stations.map((station) => {
+      const option = document.createElement("option");
+      option.value = station.code;
+      option.textContent = `${station.code}　${station.name}`;
+      return option;
+    }));
+    stationSelect.value = DEFAULT_STATION;
+    stationSelect.disabled = false;
+    await loadStation(DEFAULT_STATION);
   } catch (error) {
+    console.error("Failed to load station index:", error);
+    loadError = true;
+    refreshBoard();
+  }
+}
+
+async function loadStation(code) {
+  const station = stations.find((item) => item.code === code);
+  if (!station) return;
+  const version = ++loadVersion;
+  timetableData = null;
+  loadError = false;
+  selectedDirection = "all";
+  lastListState = null;
+  const letter = document.createElement("span");
+  letter.textContent = "A";
+  const number = document.createElement("span");
+  number.textContent = station.code.split("-")[1];
+  stationCode.replaceChildren(letter, number);
+  stationCode.setAttribute("aria-label", `駅番号 ${station.code}`);
+  document.title = `Next Train | ${station.name}駅 ${station.code} | 都営浅草線`;
+  document.getElementById("data-updated").textContent = "";
+  updateDirectionButtons();
+  refreshBoard();
+  try {
+    const data = await fetchJson(`data/asakusa/${code}.json`);
+    if (version !== loadVersion) return;
+    if (data.sourceType !== "odpt:StationTimetable" || data.station?.code !== code ||
+        !Array.isArray(data.timetables) || data.timetables.length !== station.directions.length * 2) {
+      throw new Error("Invalid station timetable data");
+    }
+    const fetchedAt = new Date(data.fetchedAt);
+    document.getElementById("data-updated").textContent = `データ取得：${new Intl.DateTimeFormat("ja-JP", {
+      timeZone: "Asia/Tokyo", dateStyle: "medium", timeStyle: "short"
+    }).format(fetchedAt)}（日本時間）`;
+    if (data.keikyuFetchedAt) {
+      document.getElementById("data-updated").textContent += `／京急：${new Intl.DateTimeFormat("ja-JP", {
+        timeZone: "Asia/Tokyo", dateStyle: "medium", timeStyle: "short"
+      }).format(new Date(data.keikyuFetchedAt))}`;
+    }
+    timetableData = data;
+  } catch (error) {
+    if (version !== loadVersion) return;
     console.error("Failed to load timetable:", error);
     loadError = true;
   }
-  lastSecond = -1;
+  if (version === loadVersion) refreshBoard();
 }
 
 function draw() {
@@ -127,12 +222,12 @@ function updateBoard(now, jst) {
   }
 
   const upcoming = getUpcomingTrains(now, jst).filter((train) =>
-    selectedPlatform === "all" || getPlatformNumber(train.timetable) === selectedPlatform);
-  const state = upcoming.map((train) => `${train.timetable.url}:${train.time}:${getRemainingMinutes(train, now)}`).join("|");
+    selectedDirection === "all" || train.timetable.direction === selectedDirection);
+  const state = upcoming.map((train) => `${train.timetable.id}:${train.time}:${getRemainingMinutes(train, now)}`).join("|");
   if (state !== lastListState) {
     trainList.replaceChildren(...upcoming.map((train, order) => createTrainRow(train, now, order)));
-    emptyElement.textContent = selectedPlatform === "all"
-      ? "本日の列車の運転は終了しました。" : `${selectedPlatform}番線の本日の列車の運転は終了しました。`;
+    emptyElement.textContent = selectedDirection === "all"
+      ? "本日の列車の運転は終了しました。" : "この方面の本日の列車の運転は終了しました。";
     emptyElement.hidden = upcoming.length > 0;
     lastListState = state;
   }
@@ -162,52 +257,43 @@ function getRemainingMinutes(train, now) {
 }
 
 function getDestinationLabel(train) {
-  // Loop-line trains have no terminal, so show the direction instead.
-  return train.destination === "環状運転" ? train.timetable.direction : `${train.destination}行き`;
+  return `${train.destination}行き`;
 }
 
 function createTrainRow(train, now, order) {
-  const style = LINE_STYLES[train.timetable.line] ?? { localColor: "#666", showService: true };
   const remaining = getRemainingMinutes(train, now);
   const row = document.createElement("li");
   // Trains are sorted, so every "まもなく" row sits at the top and shares the emphasized size.
   row.className = order === 0 || remaining === 1 ? "train is-next" : "train";
-  // The darker shades also keep the badge outline above the 3:1 non-text contrast ratio.
-  row.style.setProperty("--route-color", style.localColor);
 
   const orderLabel = document.createElement("span");
   orderLabel.className = "sr-only";
   orderLabel.textContent = order === 0 ? "次の電車" : `${order + 1}本目`;
 
-  const platform = document.createElement("span");
-  platform.className = "platform";
-  platform.textContent = getPlatformNumber(train.timetable);
-  platform.setAttribute("aria-label", `${platform.textContent}番線`);
-  const line = document.createElement("span");
-  line.className = "sr-only";
-  line.textContent = train.timetable.line;
-
   const service = document.createElement("span");
   service.className = "service";
-  if (style.showService) {
-    const isRapid = train.type === "快速";
-    service.classList.add("is-shown");
-    service.style.background = isRapid ? RAPID_COLOR : style.localColor;
-    const label = document.createElement("span");
-    label.textContent = isRapid ? "快速" : "各停";
-    service.append(label);
-  }
+  service.setAttribute("aria-label", train.type);
+  const label = document.createElement("span");
+  label.textContent = train.type;
+  const serviceStyle = getServiceStyle(train);
+  service.style.setProperty("--service-background", serviceStyle.background);
+  service.style.setProperty("--service-foreground", serviceStyle.foreground);
+  service.append(label);
 
+  const detail = document.createElement("div");
+  detail.className = "train-detail";
+  const meta = document.createElement("div");
+  meta.className = "train-meta";
+  const direction = document.createElement("span");
+  direction.className = "direction-label";
+  direction.textContent = train.timetable.direction === "north" ? "押上方面"
+    : train.timetable.direction === "keikyu" ? "品川・横浜・羽田空港方面"
+    : stationSelect.value <= "A-07" ? "西馬込方面" : "西馬込・京急線方面";
+  meta.append(service, direction);
   const destination = document.createElement("span");
   destination.className = "destination";
-  if (train.destination === "環状運転") {
-    const suffix = document.createElement("span");
-    suffix.className = "destination-suffix";
-    suffix.textContent = "方面";
-    destination.append(train.timetable.direction.replace(/方面$/, ""), suffix);
-  } else {
-    destination.textContent = train.destination;
-  }
+  destination.textContent = train.destination;
+  detail.append(meta, destination);
 
   const time = document.createElement("time");
   time.className = "departure-time";
@@ -227,6 +313,18 @@ function createTrainRow(train, now, order) {
     remainingValue.append(String(remaining), unit);
   }
 
-  row.append(orderLabel, platform, line, service, destination, time, remainingValue);
+  row.append(orderLabel, detail, time, remainingValue);
   return row;
 }
+
+
+// Native buttons keep the two existing views keyboard-operable.
+["departures", "positions"].forEach((view) => {
+  document.getElementById(`view-${view}`).addEventListener("click", () => {
+    const positions = view === "positions";
+    document.getElementById("departure-panel").hidden = positions;
+    document.getElementById("positions").hidden = !positions;
+    document.getElementById("view-departures").setAttribute("aria-pressed", String(!positions));
+    document.getElementById("view-positions").setAttribute("aria-pressed", String(positions));
+  });
+});

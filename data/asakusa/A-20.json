@@ -1,0 +1,5226 @@
+{
+  "line": "浅草線",
+  "source": "東京都交通局・公共交通オープンデータ協議会",
+  "sourceType": "odpt:StationTimetable",
+  "catalogUrl": "https://catalog.data.metro.tokyo.lg.jp/dataset/t000018d0000000052",
+  "resourceUrl": "https://ckan.odpt.org/dataset/r_station_timetable-toei",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "fetchedAt": "2026-11-03T11:01:44+00:00",
+  "station": {
+    "id": "odpt.Station:Toei.Asakusa.Oshiage",
+    "name": "押上",
+    "code": "A-20",
+    "directions": [
+      "south"
+    ]
+  },
+  "holidays": {
+    "2025-01-01": "元日",
+    "2025-01-13": "成人の日",
+    "2025-02-11": "建国記念の日",
+    "2025-02-23": "天皇誕生日",
+    "2025-02-24": "天皇誕生日 振替休日",
+    "2025-03-20": "春分の日",
+    "2025-04-29": "昭和の日",
+    "2025-05-03": "憲法記念日",
+    "2025-05-04": "みどりの日",
+    "2025-05-05": "こどもの日",
+    "2025-05-06": "みどりの日 振替休日",
+    "2025-07-21": "海の日",
+    "2025-08-11": "山の日",
+    "2025-09-15": "敬老の日",
+    "2025-09-23": "秋分の日",
+    "2025-10-13": "スポーツの日",
+    "2025-11-03": "文化の日",
+    "2025-11-23": "勤労感謝の日",
+    "2025-11-24": "勤労感謝の日 振替休日",
+    "2026-01-01": "元日",
+    "2026-01-12": "成人の日",
+    "2026-02-11": "建国記念の日",
+    "2026-02-23": "天皇誕生日",
+    "2026-03-20": "春分の日",
+    "2026-04-29": "昭和の日",
+    "2026-05-03": "憲法記念日",
+    "2026-05-04": "みどりの日",
+    "2026-05-05": "こどもの日",
+    "2026-05-06": "憲法記念日 振替休日",
+    "2026-07-20": "海の日",
+    "2026-08-11": "山の日",
+    "2026-09-21": "敬老の日",
+    "2026-09-22": "国民の休日",
+    "2026-09-23": "秋分の日",
+    "2026-10-12": "スポーツの日",
+    "2026-11-03": "文化の日",
+    "2026-11-23": "勤労感謝の日",
+    "2027-01-01": "元日",
+    "2027-01-11": "成人の日",
+    "2027-02-11": "建国記念の日",
+    "2027-02-23": "天皇誕生日",
+    "2027-03-21": "春分の日",
+    "2027-03-22": "春分の日 振替休日",
+    "2027-04-29": "昭和の日",
+    "2027-05-03": "憲法記念日",
+    "2027-05-04": "みどりの日",
+    "2027-05-05": "こどもの日",
+    "2027-07-19": "海の日",
+    "2027-08-11": "山の日",
+    "2027-09-20": "敬老の日",
+    "2027-09-23": "秋分の日",
+    "2027-10-11": "スポーツの日",
+    "2027-11-03": "文化の日",
+    "2027-11-23": "勤労感謝の日"
+  },
+  "timetables": [
+    {
+      "id": "odpt.StationTimetable:Toei.Asakusa.Oshiage.Southbound.SaturdayHoliday",
+      "stationId": "odpt.Station:Toei.Asakusa.Oshiage",
+      "line": "浅草線",
+      "direction": "south",
+      "dayType": "holiday",
+      "issued": "2025-12-13",
+      "modified": "2025-12-15T14:00:00+09:00",
+      "url": "https://ckan.odpt.org/dataset/r_station_timetable-toei",
+      "departures": [
+        {
+          "time": "05:00",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "414H",
+          "notes": []
+        },
+        {
+          "time": "05:13",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "510K",
+          "notes": []
+        },
+        {
+          "time": "05:23",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "568K",
+          "notes": []
+        },
+        {
+          "time": "05:33",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "504T",
+          "notes": []
+        },
+        {
+          "time": "05:43",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "500K",
+          "notes": []
+        },
+        {
+          "time": "05:52",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "524N",
+          "notes": []
+        },
+        {
+          "time": "06:02",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "520N",
+          "notes": []
+        },
+        {
+          "time": "06:12",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "608T",
+          "notes": []
+        },
+        {
+          "time": "06:19",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "654K",
+          "notes": []
+        },
+        {
+          "time": "06:25",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "526T",
+          "notes": []
+        },
+        {
+          "time": "06:28",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "532T",
+          "notes": []
+        },
+        {
+          "time": "06:34",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "604K",
+          "notes": []
+        },
+        {
+          "time": "06:40",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "502K",
+          "notes": []
+        },
+        {
+          "time": "06:45",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "526N",
+          "notes": []
+        },
+        {
+          "time": "06:52",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "558K",
+          "notes": []
+        },
+        {
+          "time": "06:58",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "656K",
+          "notes": []
+        },
+        {
+          "time": "07:04",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "622N",
+          "notes": []
+        },
+        {
+          "time": "07:09",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "652H",
+          "notes": []
+        },
+        {
+          "time": "07:14",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "602T",
+          "notes": []
+        },
+        {
+          "time": "07:18",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "636T",
+          "notes": []
+        },
+        {
+          "time": "07:24",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "704T",
+          "notes": []
+        },
+        {
+          "time": "07:28",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "784H",
+          "notes": []
+        },
+        {
+          "time": "07:34",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "680K",
+          "notes": []
+        },
+        {
+          "time": "07:39",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "600T",
+          "notes": []
+        },
+        {
+          "time": "07:44",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "606K",
+          "notes": []
+        },
+        {
+          "time": "07:49",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "764H",
+          "notes": []
+        },
+        {
+          "time": "07:54",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "682K",
+          "notes": []
+        },
+        {
+          "time": "07:58",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "764K",
+          "notes": []
+        },
+        {
+          "time": "08:05",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "768K",
+          "notes": []
+        },
+        {
+          "time": "08:10",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "750H",
+          "notes": []
+        },
+        {
+          "time": "08:15",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "728N",
+          "notes": []
+        },
+        {
+          "time": "08:19",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "666K",
+          "notes": []
+        },
+        {
+          "time": "08:25",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "710T",
+          "notes": []
+        },
+        {
+          "time": "08:30",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "870H",
+          "notes": []
+        },
+        {
+          "time": "08:35",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "770K",
+          "notes": []
+        },
+        {
+          "time": "08:40",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "730N",
+          "notes": []
+        },
+        {
+          "time": "08:45",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "872H",
+          "notes": []
+        },
+        {
+          "time": "08:49",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "756H",
+          "notes": []
+        },
+        {
+          "time": "08:56",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "872K",
+          "notes": []
+        },
+        {
+          "time": "09:00",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "784K",
+          "notes": []
+        },
+        {
+          "time": "09:06",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "874H",
+          "notes": []
+        },
+        {
+          "time": "09:10",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "936T",
+          "notes": []
+        },
+        {
+          "time": "09:16",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "816T",
+          "notes": []
+        },
+        {
+          "time": "09:21",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "976H",
+          "notes": []
+        },
+        {
+          "time": "09:26",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "750K",
+          "notes": []
+        },
+        {
+          "time": "09:31",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "834N",
+          "notes": []
+        },
+        {
+          "time": "09:38",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "800K",
+          "notes": []
+        },
+        {
+          "time": "09:41",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "978H",
+          "notes": []
+        },
+        {
+          "time": "09:46",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "852K",
+          "notes": []
+        },
+        {
+          "time": "09:52",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "832N",
+          "notes": []
+        },
+        {
+          "time": "09:56",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "974K",
+          "notes": []
+        },
+        {
+          "time": "10:01",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "980H",
+          "notes": []
+        },
+        {
+          "time": "10:06",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "954K",
+          "notes": []
+        },
+        {
+          "time": "10:10",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "926T",
+          "notes": []
+        },
+        {
+          "time": "10:13",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1030N",
+          "notes": []
+        },
+        {
+          "time": "10:18",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "902K",
+          "notes": []
+        },
+        {
+          "time": "10:21",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1058H",
+          "notes": []
+        },
+        {
+          "time": "10:26",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "930T",
+          "notes": []
+        },
+        {
+          "time": "10:31",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "912T",
+          "notes": []
+        },
+        {
+          "time": "10:36",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1076K",
+          "notes": []
+        },
+        {
+          "time": "10:41",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1082H",
+          "notes": []
+        },
+        {
+          "time": "10:46",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "956K",
+          "notes": []
+        },
+        {
+          "time": "10:51",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "922N",
+          "notes": []
+        },
+        {
+          "time": "10:58",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "904K",
+          "notes": []
+        },
+        {
+          "time": "11:01",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1062H",
+          "notes": []
+        },
+        {
+          "time": "11:06",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1058K",
+          "notes": []
+        },
+        {
+          "time": "11:11",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1036N",
+          "notes": []
+        },
+        {
+          "time": "11:16",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1174H",
+          "notes": []
+        },
+        {
+          "time": "11:21",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1152H",
+          "notes": []
+        },
+        {
+          "time": "11:26",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1060K",
+          "notes": []
+        },
+        {
+          "time": "11:31",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1024N",
+          "notes": []
+        },
+        {
+          "time": "11:38",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1002T",
+          "notes": []
+        },
+        {
+          "time": "11:41",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1184H",
+          "notes": []
+        },
+        {
+          "time": "11:46",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1062K",
+          "notes": []
+        },
+        {
+          "time": "11:51",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1020N",
+          "notes": []
+        },
+        {
+          "time": "11:56",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1152K",
+          "notes": []
+        },
+        {
+          "time": "12:01",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1164H",
+          "notes": []
+        },
+        {
+          "time": "12:05",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1000T",
+          "notes": []
+        },
+        {
+          "time": "12:09",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1128N",
+          "notes": []
+        },
+        {
+          "time": "12:13",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1212T",
+          "notes": []
+        },
+        {
+          "time": "12:19",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1106K",
+          "notes": []
+        },
+        {
+          "time": "12:21",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1250H",
+          "notes": []
+        },
+        {
+          "time": "12:26",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1064K",
+          "notes": []
+        },
+        {
+          "time": "12:31",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1106T",
+          "notes": []
+        },
+        {
+          "time": "12:36",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1230T",
+          "notes": []
+        },
+        {
+          "time": "12:41",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1270H",
+          "notes": []
+        },
+        {
+          "time": "12:46",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1166K",
+          "notes": []
+        },
+        {
+          "time": "12:51",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1134N",
+          "notes": []
+        },
+        {
+          "time": "12:58",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1172H",
+          "notes": []
+        },
+        {
+          "time": "13:01",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1256H",
+          "notes": []
+        },
+        {
+          "time": "13:06",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1168K",
+          "notes": []
+        },
+        {
+          "time": "13:11",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1284K",
+          "notes": []
+        },
+        {
+          "time": "13:16",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1358K",
+          "notes": []
+        },
+        {
+          "time": "13:21",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1336T",
+          "notes": []
+        },
+        {
+          "time": "13:25",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1170K",
+          "notes": []
+        },
+        {
+          "time": "13:29",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1282K",
+          "notes": []
+        },
+        {
+          "time": "13:33",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1326T",
+          "notes": []
+        },
+        {
+          "time": "13:39",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1200K",
+          "notes": []
+        },
+        {
+          "time": "13:41",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1340H",
+          "notes": []
+        },
+        {
+          "time": "13:46",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1272K",
+          "notes": []
+        },
+        {
+          "time": "13:51",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1280K",
+          "notes": []
+        },
+        {
+          "time": "13:56",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1362K",
+          "notes": []
+        },
+        {
+          "time": "14:01",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1378H",
+          "notes": []
+        },
+        {
+          "time": "14:06",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1220H",
+          "notes": []
+        },
+        {
+          "time": "14:11",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1322N",
+          "notes": []
+        },
+        {
+          "time": "14:18",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1302K",
+          "notes": []
+        },
+        {
+          "time": "14:21",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1480H",
+          "notes": []
+        },
+        {
+          "time": "14:26",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1250K",
+          "notes": []
+        },
+        {
+          "time": "14:31",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1330N",
+          "notes": []
+        },
+        {
+          "time": "14:36",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1464K",
+          "notes": []
+        },
+        {
+          "time": "14:41",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1458H",
+          "notes": []
+        },
+        {
+          "time": "14:45",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1374K",
+          "notes": []
+        },
+        {
+          "time": "14:49",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1332N",
+          "notes": []
+        },
+        {
+          "time": "14:53",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1412T",
+          "notes": []
+        },
+        {
+          "time": "14:59",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1304K",
+          "notes": []
+        },
+        {
+          "time": "15:01",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1482H",
+          "notes": []
+        },
+        {
+          "time": "15:06",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1354K",
+          "notes": []
+        },
+        {
+          "time": "15:11",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1420N",
+          "notes": []
+        },
+        {
+          "time": "15:16",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1568K",
+          "notes": []
+        },
+        {
+          "time": "15:21",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1562H",
+          "notes": []
+        },
+        {
+          "time": "15:26",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1376K",
+          "notes": []
+        },
+        {
+          "time": "15:31",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1426N",
+          "notes": []
+        },
+        {
+          "time": "15:38",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1402T",
+          "notes": []
+        },
+        {
+          "time": "15:41",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1552H",
+          "notes": []
+        },
+        {
+          "time": "15:46",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1456K",
+          "notes": []
+        },
+        {
+          "time": "15:51",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1440T",
+          "notes": []
+        },
+        {
+          "time": "15:56",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1572K",
+          "notes": []
+        },
+        {
+          "time": "16:01",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1584H",
+          "notes": []
+        },
+        {
+          "time": "16:05",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1474H",
+          "notes": []
+        },
+        {
+          "time": "16:09",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1536N",
+          "notes": []
+        },
+        {
+          "time": "16:13",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1626T",
+          "notes": []
+        },
+        {
+          "time": "16:19",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1506K",
+          "notes": []
+        },
+        {
+          "time": "16:21",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1664H",
+          "notes": []
+        },
+        {
+          "time": "16:26",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1460K",
+          "notes": []
+        },
+        {
+          "time": "16:31",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1584K",
+          "notes": []
+        },
+        {
+          "time": "16:36",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1650K",
+          "notes": []
+        },
+        {
+          "time": "16:41",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1650H",
+          "notes": []
+        },
+        {
+          "time": "16:46",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1552K",
+          "notes": []
+        },
+        {
+          "time": "16:51",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1528N",
+          "notes": []
+        },
+        {
+          "time": "16:57",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1572H",
+          "notes": []
+        },
+        {
+          "time": "17:01",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1670H",
+          "notes": []
+        },
+        {
+          "time": "17:06",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1500T",
+          "notes": []
+        },
+        {
+          "time": "17:11",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1604T",
+          "notes": []
+        },
+        {
+          "time": "17:16",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1754K",
+          "notes": []
+        },
+        {
+          "time": "17:21",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1756H",
+          "notes": []
+        },
+        {
+          "time": "17:25",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1530T",
+          "notes": []
+        },
+        {
+          "time": "17:29",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1634N",
+          "notes": []
+        },
+        {
+          "time": "17:33",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1712T",
+          "notes": []
+        },
+        {
+          "time": "17:39",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1600K",
+          "notes": []
+        },
+        {
+          "time": "17:41",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1736T",
+          "notes": []
+        },
+        {
+          "time": "17:46",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1666K",
+          "notes": []
+        },
+        {
+          "time": "17:51",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1606T",
+          "notes": []
+        },
+        {
+          "time": "17:56",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1756K",
+          "notes": []
+        },
+        {
+          "time": "18:01",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1740H",
+          "notes": []
+        },
+        {
+          "time": "18:06",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1658K",
+          "notes": []
+        },
+        {
+          "time": "18:11",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1730N",
+          "notes": []
+        },
+        {
+          "time": "18:18",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1702K",
+          "notes": []
+        },
+        {
+          "time": "18:21",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1878H",
+          "notes": []
+        },
+        {
+          "time": "18:26",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1670K",
+          "notes": []
+        },
+        {
+          "time": "18:31",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1732N",
+          "notes": []
+        },
+        {
+          "time": "18:36",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1808K",
+          "notes": []
+        },
+        {
+          "time": "18:41",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1880H",
+          "notes": []
+        },
+        {
+          "time": "18:46",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1762K",
+          "notes": []
+        },
+        {
+          "time": "18:50",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1780K",
+          "notes": []
+        },
+        {
+          "time": "18:53",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1804T",
+          "notes": []
+        },
+        {
+          "time": "18:59",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1704K",
+          "notes": []
+        },
+        {
+          "time": "19:01",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1820H",
+          "notes": []
+        },
+        {
+          "time": "19:06",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1858H",
+          "notes": []
+        },
+        {
+          "time": "19:11",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1840T",
+          "notes": []
+        },
+        {
+          "time": "19:16",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1878K",
+          "notes": []
+        },
+        {
+          "time": "19:21",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1982H",
+          "notes": []
+        },
+        {
+          "time": "19:26",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1802T",
+          "notes": []
+        },
+        {
+          "time": "19:31",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1838T",
+          "notes": []
+        },
+        {
+          "time": "19:36",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1886K",
+          "notes": []
+        },
+        {
+          "time": "19:41",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1962H",
+          "notes": []
+        },
+        {
+          "time": "19:46",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1836N",
+          "notes": []
+        },
+        {
+          "time": "19:51",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1888K",
+          "notes": []
+        },
+        {
+          "time": "19:56",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1966K",
+          "notes": []
+        },
+        {
+          "time": "20:01",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1952H",
+          "notes": []
+        },
+        {
+          "time": "20:06",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1924N",
+          "notes": []
+        },
+        {
+          "time": "20:11",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1920T",
+          "notes": []
+        },
+        {
+          "time": "20:16",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1906K",
+          "notes": []
+        },
+        {
+          "time": "20:21",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "2084H",
+          "notes": []
+        },
+        {
+          "time": "20:26",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1926N",
+          "notes": []
+        },
+        {
+          "time": "20:34",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2000T",
+          "notes": []
+        },
+        {
+          "time": "20:41",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "2064H",
+          "notes": []
+        },
+        {
+          "time": "20:46",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1928T",
+          "notes": []
+        },
+        {
+          "time": "20:51",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2050H",
+          "notes": []
+        },
+        {
+          "time": "20:56",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1972H",
+          "notes": []
+        },
+        {
+          "time": "21:04",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2034N",
+          "notes": []
+        },
+        {
+          "time": "21:13",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2152K",
+          "notes": []
+        },
+        {
+          "time": "21:20",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2026T",
+          "notes": []
+        },
+        {
+          "time": "21:25",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "2170H",
+          "notes": []
+        },
+        {
+          "time": "21:31",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2102T",
+          "notes": []
+        },
+        {
+          "time": "21:38",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2010K",
+          "notes": []
+        },
+        {
+          "time": "21:46",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2028N",
+          "notes": []
+        },
+        {
+          "time": "21:53",
+          "type": "特急",
+          "destination": "三浦海岸",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Miurakaigan"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "2146H",
+          "notes": []
+        },
+        {
+          "time": "22:01",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2132N",
+          "notes": []
+        },
+        {
+          "time": "22:08",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2160H",
+          "notes": []
+        },
+        {
+          "time": "22:15",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2236T",
+          "notes": []
+        },
+        {
+          "time": "22:20",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "2286H",
+          "notes": []
+        },
+        {
+          "time": "22:29",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2112T",
+          "notes": []
+        },
+        {
+          "time": "22:37",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "2220H",
+          "notes": []
+        },
+        {
+          "time": "22:46",
+          "type": "特急",
+          "destination": "三浦海岸",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Miurakaigan"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "2158H",
+          "notes": []
+        },
+        {
+          "time": "22:55",
+          "type": "急行",
+          "destination": "逗子・葉山",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Zushi.ZushiHayama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2274H",
+          "notes": []
+        },
+        {
+          "time": "23:05",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2230N",
+          "notes": []
+        },
+        {
+          "time": "23:14",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2306T",
+          "notes": []
+        },
+        {
+          "time": "23:24",
+          "type": "普通",
+          "destination": "品川",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Main.Shinagawa"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2304K",
+          "notes": []
+        },
+        {
+          "time": "23:31",
+          "type": "特急",
+          "destination": "金沢文庫",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Main.KanazawaBunko"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "2266H",
+          "notes": []
+        },
+        {
+          "time": "23:42",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2334T",
+          "notes": []
+        },
+        {
+          "time": "23:53",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2302T",
+          "notes": []
+        },
+        {
+          "time": "24:05",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2300T",
+          "notes": []
+        },
+        {
+          "time": "24:22",
+          "type": "普通",
+          "destination": "浅草橋",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Asakusabashi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2410T",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "id": "odpt.StationTimetable:Toei.Asakusa.Oshiage.Southbound.Weekday",
+      "stationId": "odpt.Station:Toei.Asakusa.Oshiage",
+      "line": "浅草線",
+      "direction": "south",
+      "dayType": "weekday",
+      "issued": "2025-12-15",
+      "modified": "2025-12-15T14:00:00+09:00",
+      "url": "https://ckan.odpt.org/dataset/r_station_timetable-toei",
+      "departures": [
+        {
+          "time": "05:00",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "400K",
+          "notes": []
+        },
+        {
+          "time": "05:13",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "510K",
+          "notes": []
+        },
+        {
+          "time": "05:23",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "582H",
+          "notes": []
+        },
+        {
+          "time": "05:33",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "504T",
+          "notes": []
+        },
+        {
+          "time": "05:43",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "506K",
+          "notes": []
+        },
+        {
+          "time": "05:51",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "526N",
+          "notes": []
+        },
+        {
+          "time": "06:01",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "520N",
+          "notes": []
+        },
+        {
+          "time": "06:09",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "578Kb",
+          "notes": []
+        },
+        {
+          "time": "06:17",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "610T",
+          "notes": []
+        },
+        {
+          "time": "06:24",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "572K",
+          "notes": []
+        },
+        {
+          "time": "06:27",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "524N",
+          "notes": []
+        },
+        {
+          "time": "06:34",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "508K",
+          "notes": []
+        },
+        {
+          "time": "06:40",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "574K",
+          "notes": []
+        },
+        {
+          "time": "06:45",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "528N",
+          "notes": []
+        },
+        {
+          "time": "06:52",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "576K",
+          "notes": []
+        },
+        {
+          "time": "06:57",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "680K",
+          "notes": []
+        },
+        {
+          "time": "07:01",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "622N",
+          "notes": []
+        },
+        {
+          "time": "07:07",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "620Hb",
+          "notes": []
+        },
+        {
+          "time": "07:12",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "602T",
+          "notes": []
+        },
+        {
+          "time": "07:15",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "608T",
+          "notes": []
+        },
+        {
+          "time": "07:19",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "630N",
+          "notes": []
+        },
+        {
+          "time": "07:22",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "650K",
+          "notes": []
+        },
+        {
+          "time": "07:26",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "724H",
+          "notes": []
+        },
+        {
+          "time": "07:29",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "644T",
+          "notes": []
+        },
+        {
+          "time": "07:32",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "600T",
+          "notes": []
+        },
+        {
+          "time": "07:34",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "652K",
+          "notes": []
+        },
+        {
+          "time": "07:37",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "722H",
+          "notes": []
+        },
+        {
+          "time": "07:39",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "712T",
+          "notes": []
+        },
+        {
+          "time": "07:42",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "646T",
+          "notes": []
+        },
+        {
+          "time": "07:44",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "654K",
+          "notes": []
+        },
+        {
+          "time": "07:47",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "752H",
+          "notes": []
+        },
+        {
+          "time": "07:50",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "750T",
+          "notes": []
+        },
+        {
+          "time": "07:53",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "642T",
+          "notes": []
+        },
+        {
+          "time": "07:55",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "656K",
+          "notes": []
+        },
+        {
+          "time": "07:58",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "754H",
+          "notes": []
+        },
+        {
+          "time": "08:00",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "702K",
+          "notes": []
+        },
+        {
+          "time": "08:03",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "732N",
+          "notes": []
+        },
+        {
+          "time": "08:05",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "658K",
+          "notes": []
+        },
+        {
+          "time": "08:08",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "756H",
+          "notes": []
+        },
+        {
+          "time": "08:10",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "734N",
+          "notes": []
+        },
+        {
+          "time": "08:13",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "716T",
+          "notes": []
+        },
+        {
+          "time": "08:16",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "760K",
+          "notes": []
+        },
+        {
+          "time": "08:18",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "858H",
+          "notes": []
+        },
+        {
+          "time": "08:22",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "736N",
+          "notes": []
+        },
+        {
+          "time": "08:25",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "762K",
+          "notes": []
+        },
+        {
+          "time": "08:27",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "860H",
+          "notes": []
+        },
+        {
+          "time": "08:30",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "720T",
+          "notes": []
+        },
+        {
+          "time": "08:33",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "748T",
+          "notes": []
+        },
+        {
+          "time": "08:35",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "706T",
+          "notes": []
+        },
+        {
+          "time": "08:38",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "862H",
+          "notes": []
+        },
+        {
+          "time": "08:41",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "700K",
+          "notes": []
+        },
+        {
+          "time": "08:43",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "722T",
+          "notes": []
+        },
+        {
+          "time": "08:46",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "764K",
+          "notes": []
+        },
+        {
+          "time": "08:48",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "864H",
+          "notes": []
+        },
+        {
+          "time": "08:51",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "804T",
+          "notes": []
+        },
+        {
+          "time": "08:53",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "738N",
+          "notes": []
+        },
+        {
+          "time": "08:57",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "766K",
+          "notes": []
+        },
+        {
+          "time": "09:00",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "866H",
+          "notes": []
+        },
+        {
+          "time": "09:03",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "882K",
+          "notes": []
+        },
+        {
+          "time": "09:06",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "786K",
+          "notes": []
+        },
+        {
+          "time": "09:09",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "868H",
+          "notes": []
+        },
+        {
+          "time": "09:12",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "912T",
+          "notes": []
+        },
+        {
+          "time": "09:15",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "826N",
+          "notes": []
+        },
+        {
+          "time": "09:19",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "868K",
+          "notes": []
+        },
+        {
+          "time": "09:21",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "970H",
+          "notes": []
+        },
+        {
+          "time": "09:24",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "878K",
+          "notes": []
+        },
+        {
+          "time": "09:29",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "810K",
+          "notes": []
+        },
+        {
+          "time": "09:31",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "944T",
+          "notes": []
+        },
+        {
+          "time": "09:34",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "900T",
+          "notes": []
+        },
+        {
+          "time": "09:37",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "820N",
+          "notes": []
+        },
+        {
+          "time": "09:41",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "870K",
+          "notes": []
+        },
+        {
+          "time": "09:45",
+          "type": "快特",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "840H",
+          "notes": []
+        },
+        {
+          "time": "09:48",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "806K",
+          "notes": []
+        },
+        {
+          "time": "09:51",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "946T",
+          "notes": []
+        },
+        {
+          "time": "09:54",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "976H",
+          "notes": []
+        },
+        {
+          "time": "09:59",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "978H",
+          "notes": []
+        },
+        {
+          "time": "10:02",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "928N",
+          "notes": []
+        },
+        {
+          "time": "10:08",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "914T",
+          "notes": []
+        },
+        {
+          "time": "10:13",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "926T",
+          "notes": []
+        },
+        {
+          "time": "10:19",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "918T",
+          "notes": []
+        },
+        {
+          "time": "10:21",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1080H",
+          "notes": []
+        },
+        {
+          "time": "10:25",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1040T",
+          "notes": []
+        },
+        {
+          "time": "10:28",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1010T",
+          "notes": []
+        },
+        {
+          "time": "10:32",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "924T",
+          "notes": []
+        },
+        {
+          "time": "10:37",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1016T",
+          "notes": []
+        },
+        {
+          "time": "10:41",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1084H",
+          "notes": []
+        },
+        {
+          "time": "10:46",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1080K",
+          "notes": []
+        },
+        {
+          "time": "10:51",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1030T",
+          "notes": []
+        },
+        {
+          "time": "10:59",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1028T",
+          "notes": []
+        },
+        {
+          "time": "11:01",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1086H",
+          "notes": []
+        },
+        {
+          "time": "11:06",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1022N",
+          "notes": []
+        },
+        {
+          "time": "11:11",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1184K",
+          "notes": []
+        },
+        {
+          "time": "11:16",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1132T",
+          "notes": []
+        },
+        {
+          "time": "11:21",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1172H",
+          "notes": []
+        },
+        {
+          "time": "11:26",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1054K",
+          "notes": []
+        },
+        {
+          "time": "11:31",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1008T",
+          "notes": []
+        },
+        {
+          "time": "11:38",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1002K",
+          "notes": []
+        },
+        {
+          "time": "11:41",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1152H",
+          "notes": []
+        },
+        {
+          "time": "11:45",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1190K",
+          "notes": []
+        },
+        {
+          "time": "11:49",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1032N",
+          "notes": []
+        },
+        {
+          "time": "11:55",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1058K",
+          "notes": []
+        },
+        {
+          "time": "12:01",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1122H",
+          "notes": []
+        },
+        {
+          "time": "12:05",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1050K",
+          "notes": []
+        },
+        {
+          "time": "12:09",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1136N",
+          "notes": []
+        },
+        {
+          "time": "12:13",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1210T",
+          "notes": []
+        },
+        {
+          "time": "12:19",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1100K",
+          "notes": []
+        },
+        {
+          "time": "12:21",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1254H",
+          "notes": []
+        },
+        {
+          "time": "12:26",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1164K",
+          "notes": []
+        },
+        {
+          "time": "12:31",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1138N",
+          "notes": []
+        },
+        {
+          "time": "12:36",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1262K",
+          "notes": []
+        },
+        {
+          "time": "12:41",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1256H",
+          "notes": []
+        },
+        {
+          "time": "12:46",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1176K",
+          "notes": []
+        },
+        {
+          "time": "12:51",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1126N",
+          "notes": []
+        },
+        {
+          "time": "12:58",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1142T",
+          "notes": []
+        },
+        {
+          "time": "13:01",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1262H",
+          "notes": []
+        },
+        {
+          "time": "13:06",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1186K",
+          "notes": []
+        },
+        {
+          "time": "13:11",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1220N",
+          "notes": []
+        },
+        {
+          "time": "13:16",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1374H",
+          "notes": []
+        },
+        {
+          "time": "13:21",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1364H",
+          "notes": []
+        },
+        {
+          "time": "13:25",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1168K",
+          "notes": []
+        },
+        {
+          "time": "13:29",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1228N",
+          "notes": []
+        },
+        {
+          "time": "13:33",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1330T",
+          "notes": []
+        },
+        {
+          "time": "13:39",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1248T",
+          "notes": []
+        },
+        {
+          "time": "13:41",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1376H",
+          "notes": []
+        },
+        {
+          "time": "13:46",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1252K",
+          "notes": []
+        },
+        {
+          "time": "13:51",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1266K",
+          "notes": []
+        },
+        {
+          "time": "13:56",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1390K",
+          "notes": []
+        },
+        {
+          "time": "14:01",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1300T",
+          "notes": []
+        },
+        {
+          "time": "14:06",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1270K",
+          "notes": []
+        },
+        {
+          "time": "14:11",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1360K",
+          "notes": []
+        },
+        {
+          "time": "14:18",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1318T",
+          "notes": []
+        },
+        {
+          "time": "14:21",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1440H",
+          "notes": []
+        },
+        {
+          "time": "14:26",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1274K",
+          "notes": []
+        },
+        {
+          "time": "14:31",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1326T",
+          "notes": []
+        },
+        {
+          "time": "14:36",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1464K",
+          "notes": []
+        },
+        {
+          "time": "14:41",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1424H",
+          "notes": []
+        },
+        {
+          "time": "14:45",
+          "type": "特急",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1378H",
+          "notes": []
+        },
+        {
+          "time": "14:49",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1324T",
+          "notes": []
+        },
+        {
+          "time": "14:53",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1410T",
+          "notes": []
+        },
+        {
+          "time": "14:59",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1328T",
+          "notes": []
+        },
+        {
+          "time": "15:01",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1480H",
+          "notes": []
+        },
+        {
+          "time": "15:06",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1314T",
+          "notes": []
+        },
+        {
+          "time": "15:11",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1456K",
+          "notes": []
+        },
+        {
+          "time": "15:16",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1586K",
+          "notes": []
+        },
+        {
+          "time": "15:21",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1584H",
+          "notes": []
+        },
+        {
+          "time": "15:26",
+          "type": "快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1316T",
+          "notes": []
+        },
+        {
+          "time": "15:31",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1436N",
+          "notes": []
+        },
+        {
+          "time": "15:38",
+          "type": "エアポート快特",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.AirportRapidLimitedExpress",
+          "trainNumber": "1402K",
+          "notes": []
+        },
+        {
+          "time": "15:41",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1586H",
+          "notes": []
+        },
+        {
+          "time": "15:46",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1480K",
+          "notes": []
+        },
+        {
+          "time": "15:50",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1430N",
+          "notes": []
+        },
+        {
+          "time": "15:55",
+          "type": "快特",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1582H",
+          "notes": []
+        },
+        {
+          "time": "16:00",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1572H",
+          "notes": []
+        },
+        {
+          "time": "16:03",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1432T",
+          "notes": []
+        },
+        {
+          "time": "16:07",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1584K",
+          "notes": []
+        },
+        {
+          "time": "16:12",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1652H",
+          "notes": []
+        },
+        {
+          "time": "16:16",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1500K",
+          "notes": []
+        },
+        {
+          "time": "16:21",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1672K",
+          "notes": []
+        },
+        {
+          "time": "16:27",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1630T",
+          "notes": []
+        },
+        {
+          "time": "16:31",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1654K",
+          "notes": []
+        },
+        {
+          "time": "16:35",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1520N",
+          "notes": []
+        },
+        {
+          "time": "16:40",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1622H",
+          "notes": []
+        },
+        {
+          "time": "16:45",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1674K",
+          "notes": []
+        },
+        {
+          "time": "16:50",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1528H",
+          "notes": []
+        },
+        {
+          "time": "16:53",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1550K",
+          "notes": []
+        },
+        {
+          "time": "16:56",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1628N",
+          "notes": []
+        },
+        {
+          "time": "17:00",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1648T",
+          "notes": []
+        },
+        {
+          "time": "17:05",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1694K",
+          "notes": []
+        },
+        {
+          "time": "17:10",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1674H",
+          "notes": []
+        },
+        {
+          "time": "17:15",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1624N",
+          "notes": []
+        },
+        {
+          "time": "17:19",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1762H",
+          "notes": []
+        },
+        {
+          "time": "17:22",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1678K",
+          "notes": []
+        },
+        {
+          "time": "17:25",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1634N",
+          "notes": []
+        },
+        {
+          "time": "17:29",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1764H",
+          "notes": []
+        },
+        {
+          "time": "17:32",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1642T",
+          "notes": []
+        },
+        {
+          "time": "17:35",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1740T",
+          "notes": []
+        },
+        {
+          "time": "17:40",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1758H",
+          "notes": []
+        },
+        {
+          "time": "17:45",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1618T",
+          "notes": []
+        },
+        {
+          "time": "17:48",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1776H",
+          "notes": []
+        },
+        {
+          "time": "17:52",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1670K",
+          "notes": []
+        },
+        {
+          "time": "17:55",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1776K",
+          "notes": []
+        },
+        {
+          "time": "17:58",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1758K",
+          "notes": []
+        },
+        {
+          "time": "18:00",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1708T",
+          "notes": []
+        },
+        {
+          "time": "18:05",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1682K",
+          "notes": []
+        },
+        {
+          "time": "18:09",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1756H",
+          "notes": []
+        },
+        {
+          "time": "18:13",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1764K",
+          "notes": []
+        },
+        {
+          "time": "18:15",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1792K",
+          "notes": []
+        },
+        {
+          "time": "18:19",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1860H",
+          "notes": []
+        },
+        {
+          "time": "18:23",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1726N",
+          "notes": []
+        },
+        {
+          "time": "18:26",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1726T",
+          "notes": []
+        },
+        {
+          "time": "18:30",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1866H",
+          "notes": []
+        },
+        {
+          "time": "18:34",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1778H",
+          "notes": []
+        },
+        {
+          "time": "18:37",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1868K",
+          "notes": []
+        },
+        {
+          "time": "18:40",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1840H",
+          "notes": []
+        },
+        {
+          "time": "18:43",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1800T",
+          "notes": []
+        },
+        {
+          "time": "18:46",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1736N",
+          "notes": []
+        },
+        {
+          "time": "18:50",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1824H",
+          "notes": []
+        },
+        {
+          "time": "18:55",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1860K",
+          "notes": []
+        },
+        {
+          "time": "19:00",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "1870H",
+          "notes": []
+        },
+        {
+          "time": "19:04",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1832N",
+          "notes": []
+        },
+        {
+          "time": "19:07",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1828T",
+          "notes": []
+        },
+        {
+          "time": "19:12",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1924T",
+          "notes": []
+        },
+        {
+          "time": "19:16",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1922N",
+          "notes": []
+        },
+        {
+          "time": "19:20",
+          "type": "快特",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1980H",
+          "notes": []
+        },
+        {
+          "time": "19:25",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1832T",
+          "notes": []
+        },
+        {
+          "time": "19:29",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1906K",
+          "notes": []
+        },
+        {
+          "time": "19:33",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1856K",
+          "notes": []
+        },
+        {
+          "time": "19:37",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1852T",
+          "notes": []
+        },
+        {
+          "time": "19:41",
+          "type": "快特",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1984H",
+          "notes": []
+        },
+        {
+          "time": "19:44",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1852K",
+          "notes": []
+        },
+        {
+          "time": "19:48",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1880K",
+          "notes": []
+        },
+        {
+          "time": "19:51",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1984K",
+          "notes": []
+        },
+        {
+          "time": "19:54",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1990K",
+          "notes": []
+        },
+        {
+          "time": "19:59",
+          "type": "快特",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1972H",
+          "notes": []
+        },
+        {
+          "time": "20:02",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1854T",
+          "notes": []
+        },
+        {
+          "time": "20:06",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1988K",
+          "notes": []
+        },
+        {
+          "time": "20:11",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "1930N",
+          "notes": []
+        },
+        {
+          "time": "20:15",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1810T",
+          "notes": []
+        },
+        {
+          "time": "20:19",
+          "type": "快特",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1934H",
+          "notes": []
+        },
+        {
+          "time": "20:23",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2050K",
+          "notes": []
+        },
+        {
+          "time": "20:27",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1986K",
+          "notes": []
+        },
+        {
+          "time": "20:34",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "1920N",
+          "notes": []
+        },
+        {
+          "time": "20:39",
+          "type": "快特",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "1904H",
+          "notes": []
+        },
+        {
+          "time": "20:46",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2074K",
+          "notes": []
+        },
+        {
+          "time": "20:52",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2062K",
+          "notes": []
+        },
+        {
+          "time": "20:57",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2008K",
+          "notes": []
+        },
+        {
+          "time": "21:01",
+          "type": "快特",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "2032H",
+          "notes": []
+        },
+        {
+          "time": "21:06",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2036N",
+          "notes": []
+        },
+        {
+          "time": "21:13",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2024N",
+          "notes": []
+        },
+        {
+          "time": "21:21",
+          "type": "快特",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "2186H",
+          "notes": []
+        },
+        {
+          "time": "21:27",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2064T",
+          "notes": []
+        },
+        {
+          "time": "21:33",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2148T",
+          "notes": []
+        },
+        {
+          "time": "21:36",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2040T",
+          "notes": []
+        },
+        {
+          "time": "21:41",
+          "type": "快特",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "2154H",
+          "notes": []
+        },
+        {
+          "time": "21:46",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2176K",
+          "notes": []
+        },
+        {
+          "time": "21:52",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2118T",
+          "notes": []
+        },
+        {
+          "time": "21:56",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2158K",
+          "notes": []
+        },
+        {
+          "time": "22:03",
+          "type": "快特",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.RapidLimitedExpress",
+          "trainNumber": "2178H",
+          "notes": []
+        },
+        {
+          "time": "22:08",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2102T",
+          "notes": []
+        },
+        {
+          "time": "22:14",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2100T",
+          "notes": []
+        },
+        {
+          "time": "22:22",
+          "type": "特急",
+          "destination": "三崎口",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Misakiguchi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "2112H",
+          "notes": []
+        },
+        {
+          "time": "22:30",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2226T",
+          "notes": []
+        },
+        {
+          "time": "22:37",
+          "type": "急行",
+          "destination": "羽田空港第１・第２ターミナル",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Airport.HanedaAirportTerminal1and2"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Express",
+          "trainNumber": "2252T",
+          "notes": []
+        },
+        {
+          "time": "22:46",
+          "type": "特急",
+          "destination": "三浦海岸",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.Miurakaigan"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "2226H",
+          "notes": []
+        },
+        {
+          "time": "22:57",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2230T",
+          "notes": []
+        },
+        {
+          "time": "23:04",
+          "type": "特急",
+          "destination": "京急久里浜",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Kurihama.KeikyuKurihama"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "2262H",
+          "notes": []
+        },
+        {
+          "time": "23:15",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2254T",
+          "notes": []
+        },
+        {
+          "time": "23:24",
+          "type": "特急",
+          "destination": "神奈川新町",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Main.KanagawaShimmachi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.LimitedExpress",
+          "trainNumber": "2306K",
+          "notes": []
+        },
+        {
+          "time": "23:33",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2208T",
+          "notes": []
+        },
+        {
+          "time": "23:45",
+          "type": "普通",
+          "destination": "西馬込",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.NishiMagome"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2358T",
+          "notes": []
+        },
+        {
+          "time": "23:53",
+          "type": "普通",
+          "destination": "品川",
+          "destinationStationIds": [
+            "odpt.Station:Keikyu.Main.Shinagawa"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2252H",
+          "notes": []
+        },
+        {
+          "time": "24:05",
+          "type": "普通",
+          "destination": "泉岳寺",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Sengakuji"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2362T",
+          "notes": []
+        },
+        {
+          "time": "24:22",
+          "type": "普通",
+          "destination": "浅草橋",
+          "destinationStationIds": [
+            "odpt.Station:Toei.Asakusa.Asakusabashi"
+          ],
+          "trainTypeId": "odpt.TrainType:Toei.Local",
+          "trainNumber": "2418T",
+          "notes": []
+        }
+      ]
+    }
+  ]
+}

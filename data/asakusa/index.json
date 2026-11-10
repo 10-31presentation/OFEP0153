@@ -1,0 +1,192 @@
+{
+  "line": "浅草線",
+  "source": "東京都交通局・公共交通オープンデータ協議会",
+  "sourceType": "odpt:StationTimetable",
+  "catalogUrl": "https://catalog.data.metro.tokyo.lg.jp/dataset/t000018d0000000052",
+  "resourceUrl": "https://ckan.odpt.org/dataset/r_station_timetable-toei",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "fetchedAt": "2026-11-03T11:01:44+00:00",
+  "stations": [
+    {
+      "id": "odpt.Station:Toei.Asakusa.NishiMagome",
+      "name": "西馬込",
+      "code": "A-01",
+      "directions": [
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Magome",
+      "name": "馬込",
+      "code": "A-02",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Nakanobu",
+      "name": "中延",
+      "code": "A-03",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Togoshi",
+      "name": "戸越",
+      "code": "A-04",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Gotanda",
+      "name": "五反田",
+      "code": "A-05",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Takanawadai",
+      "name": "高輪台",
+      "code": "A-06",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Sengakuji",
+      "name": "泉岳寺",
+      "code": "A-07",
+      "keikyuAvailable": true,
+      "directions": [
+        "south",
+        "north",
+        "keikyu"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Mita",
+      "name": "三田",
+      "code": "A-08",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Daimon",
+      "name": "大門",
+      "code": "A-09",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Shimbashi",
+      "name": "新橋",
+      "code": "A-10",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.HigashiGinza",
+      "name": "東銀座",
+      "code": "A-11",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Takaracho",
+      "name": "宝町",
+      "code": "A-12",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Nihombashi",
+      "name": "日本橋",
+      "code": "A-13",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Ningyocho",
+      "name": "人形町",
+      "code": "A-14",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.HigashiNihombashi",
+      "name": "東日本橋",
+      "code": "A-15",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Asakusabashi",
+      "name": "浅草橋",
+      "code": "A-16",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Kuramae",
+      "name": "蔵前",
+      "code": "A-17",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Asakusa",
+      "name": "浅草",
+      "code": "A-18",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.HonjoAzumabashi",
+      "name": "本所吾妻橋",
+      "code": "A-19",
+      "directions": [
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "odpt.Station:Toei.Asakusa.Oshiage",
+      "name": "押上",
+      "code": "A-20",
+      "directions": [
+        "south"
+      ]
+    }
+  ]
+}

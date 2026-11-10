@@ -4,38 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="現在時刻と次の列車を直感的に確認できる発車案内アプリ">
-    <title>Next Train — 田町駅</title>
+    <meta name="description" content="都営浅草線の全20駅から、次の列車と発車までの残り時間を確認できます">
+    <title>Next Train | 都営浅草線</title>
     <link rel="icon" href="data:,">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Google+Sans+Code:wght@500;700&display=swap">
-    <!-- Only the characters used in the service badges are needed from the dot font. -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&text=%E5%90%84%E5%81%9C%E5%BF%AB%E9%80%9F&display=swap">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js" defer></script>
+    <script src="positions.js" defer></script>
     <script src="sketch.js" defer></script>
   </head>
   <body>
     <main class="shell">
       <header class="site-header">
-        <h1>Next Train</h1>
-        <p class="station-name">田町<span class="station-suffix">駅</span></p>
+        <h1>Next Train <span class="operator-name">都営浅草線</span></h1>
+
       </header>
+      <section class="station-picker" aria-label="表示する駅">
+        <div id="station-code" class="station-code" aria-label="駅番号 A-08"><span>A</span><span>08</span></div>
+        <div class="station-control">
+          <label for="station-select">駅を選ぶ</label>
+          <select id="station-select" disabled><option>駅を読み込んでいます…</option></select>
+        </div>
+      </section>
+      <nav class="view-tabs" aria-label="表示の切り替え">
+        <button type="button" id="view-departures" aria-pressed="true" aria-controls="departure-panel">発車案内</button>
+        <button type="button" id="view-positions" aria-pressed="false" aria-controls="positions">列車走行位置</button>
+      </nav>
+      <section id="departure-panel" aria-label="発車案内">
       <div class="clock">
         <p class="clock-label" aria-hidden="true">現在時刻</p>
         <div id="clock-canvas" aria-hidden="true"></div>
       </div>
       <time id="current-time" class="sr-only"></time>
-      <nav class="platform-filter" aria-label="番線で絞り込み">
-        <button type="button" data-platform="all" aria-pressed="true">すべて</button>
-        <button type="button" data-platform="1" aria-pressed="false">1番線</button>
-        <button type="button" data-platform="2" aria-pressed="false">2番線</button>
-        <button type="button" data-platform="3" aria-pressed="false">3番線</button>
-        <button type="button" data-platform="4" aria-pressed="false">4番線</button>
+      <nav class="direction-filter" aria-label="方面で絞り込み">
+        <button type="button" data-direction="all" aria-pressed="true">両方面</button>
+        <button type="button" data-direction="south" aria-pressed="false">西馬込・京急線方面</button>
+        <button type="button" data-direction="keikyu" aria-pressed="false" hidden>京急線方面</button>
+        <button type="button" data-direction="north" aria-pressed="false">押上・京成線方面</button>
       </nav>
+      <p id="station-data-note" class="station-data-note" hidden></p>
       <ol id="train-list" class="train-list" aria-label="次の列車"></ol>
       <p id="empty-state" class="empty-state" hidden></p>
+      </section>
+      <section id="positions" class="positions" aria-labelledby="positions-title" hidden>
+        <div class="positions-heading">
+          <h2 id="positions-title">列車の位置</h2>
+          <button id="position-scope" type="button" aria-pressed="false">全線を表示</button>
+        </div>
+        <p id="position-status" class="position-status" role="status">走行位置を読み込んでいます…</p>
+        <div id="position-detail" class="position-detail" role="region" aria-label="列車の詳細" hidden></div>
+        <div class="route-directions" aria-hidden="true"><span>西馬込・京急線方面<br>↑</span><span>押上・京成線方面<br>↓</span></div>
+        <div class="route-scroll" tabindex="0" role="region" aria-label="浅草線の路線図。上下にスクロールできます">
+          <ol id="position-list" class="route-diagram" aria-label="浅草線の走行位置"></ol>
+        </div>
+        <p class="position-note">列車をタップすると詳細を表示します。駅間の位置は概略です。30秒ごとに取得します。</p>
+      </section>
+      <footer class="data-note">
+        <p>発車案内は所定時刻です。発車時刻には遅延・運休を反映しません。</p>
+        <p>データ提供：東京都交通局・公共交通オープンデータ協議会</p>
+        <p>
+          <a href="https://catalog.data.metro.tokyo.lg.jp/dataset/t000018d0000000052" target="_blank" rel="noopener">東京都オープンデータカタログ</a>・
+          <a href="https://ckan.odpt.org/dataset/r_station_timetable-toei" target="_blank" rel="noopener">ODPT 駅時刻表</a>・
+          <a href="https://ckan.odpt.org/dataset/r_train_location-toei" target="_blank" rel="noopener">列車位置</a>・
+          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">都営データ：CC BY 4.0</a>
+        </p>
+        <p id="keikyu-credit" hidden>京急データ：京急電鉄・公共交通オープンデータ協議会
+          <a href="https://ckan.odpt.org/dataset/keikyu__r_station_timetable" target="_blank" rel="noopener">駅時刻表</a>・
+          <a href="https://developer.odpt.org/challenge_license" target="_blank" rel="noopener">チャレンジ限定ライセンス</a>
+        </p>
+        <p id="data-updated"></p>
+      </footer>
       <p id="live-region" class="sr-only" aria-live="polite" aria-atomic="true"></p>
     </main>
   </body>
